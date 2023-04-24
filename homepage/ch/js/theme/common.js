@@ -1,16 +1,9 @@
-//menu
-/*$('.menu > ul > li').mouseover(function(){
-	$(this).children('.sub-menu').show();
-	$(this).children('.sub-menu').css('opacity','1');
-});
-$('.menu > ul > li').mouseleave(function(){
-	$(this).children('.sub-menu').hide();
-	$(this).children('.sub-menu').css('opacity','0');
-});*/
 $('.menu > .gnb > li').mouseover(function(){
 	$('#header').addClass('on');
+	//$('.sub-menu').css('display','block');
 });
 $('#header').mouseleave(function(){
+	//$('.sub-menu').css('display','none');
 	$(this).removeClass('on');
 });
 
@@ -20,16 +13,6 @@ $('.sub-menu').mouseover(function(){
 $('.sub-menu').mouseleave(function(){
 	$(this).parents('.gnb > li').removeClass('on');
 });
-
-
-
-/*
-$('#header a').mouseover(function(){
-	$('#header').css('background','#fff');
-});
-$('#header a').mouseleave(function(){
-	$('#header').css('background','rgba(255,255,255,0.95)');
-});*/
 
 
 //mobile-menu
@@ -51,40 +34,43 @@ $('.blind').click(function(){
 });
 
 
-/*//sub-navi
-$('.m-sub-nav > button').click(function(){
-	$('.m-sub-nav ul li').removeClass('selected');
-	$(this).toggleClass('on');
-	$('.m-sub-nav ul').stop().slideToggle();
-});
-*/
-
 //scroll-menu
 $(function(){
 	 $(window).scroll(function () {
 	        if ($(this).scrollTop() > 100) {
-	        	$('#header').addClass('scroll-menu');
+	        	$('#header').addClass('fixed');
 	        	$('.btn-up').css('opacity','1');
+	        	$('.scrollMotion').addClass('active');
 	        } else {
-	        	 $('#header').removeClass('scroll-menu');
+	        	 $('#header').removeClass('fixed');
 	        	 $('.btn-up').css('opacity','0');
+	        	 $('.scrollMotion').removeClass('active');
 	        }
+	        
 	    });
+	 
+	//sub-top
+	$('.sub-top-bg').addClass('active')	 
 
-	 //btn-up
+	//btn-up
 	$('.btn-up').click(function(){
 	    $('html, body').animate({scrollTop : 0},600);
 	    return false;
 	});
-	
-	//nav-menu
-	$('.nav-menu').click(function(){
-		$(this).children('ul').stop().slideToggle();
-		$(this).toggleClass('nav-active');
-		//return false;
-	});
 });
 
 
+$(document).ready(function() {
+	$('#mixedSlider').multislider({
+		duration: 750,
+		interval: 4000
+	});
 
+	//aos
+	AOS.init({
+		duration: 1200
+		//once: false
+	});
+	
+});
 
