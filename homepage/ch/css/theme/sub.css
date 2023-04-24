@@ -1,0 +1,212 @@
+@charset "utf-8";
+
+/*====================
+	SUB PAGE MENU
+======================*/
+#header.fixed{width:100%; top:0; height:80px; background:#fff;}
+#header.fixed.on{height:380px;}
+#header.fixed.on:before{top:80px;}
+#header.fixed .logo{top:15px;}
+#header.fixed .logo img{max-width:70%;}
+#header.fixed .menu > .gnb > li{line-height:80px;}
+#header.fixed .lang{right:20px; top:30px;}
+
+#sub-top{width:100%; position:relative; transition:all 0.4s; overflow:hidden;}
+.sub-top1{background:url(../../images/theme/sub/sub-top01.jpg)no-repeat;}
+.sub-top2{background:url(../../images/theme/sub/sub-top02.jpg)no-repeat;}
+.sub-top3{background:url(../../images/theme/sub/sub-top03.jpg)no-repeat;}
+.sub-top4{background:url(../../images/theme/sub/sub-top04.jpg)no-repeat;}
+.sub-top4{background:url(../../images/theme/sub/sub-top05.jpg)no-repeat;}
+.sub-top4{background:url(../../images/theme/sub/sub-top06.jpg)no-repeat;}
+.sub-top-bg{transform:scale(1.08) rotate(0.1deg); transition:transform 5s linear; background-size:cover; background-position:center center; height:480px;}
+.sub-top-bg.active{transform:scale(1) rotate(0deg);}
+
+#sub-top .s-top-title{position:absolute; top:calc(50% + 50px); left:50%; /* width:80%;  */transform:translate(-50%, -50%); text-align:center; /* padding:100px 20px;  */box-sizing:border-box;}
+#sub-top .s-top-title h1{font-size:46px; color:#fff; font-weight:700; position:relative; padding-top:20px; display:inline-block; opacity:0.95;}
+.sub-nav{position:absolute; right:50px; bottom:40px;}
+.sub-nav ul li{font-size:14px; line-height:26px; color:#fff; opacity:0.7; display:inline-table; padding-right:10px; position:relative; cursor:default;}
+.sub-nav ul li:last-child{opacity:0.9; padding-right:0;}
+.sub-nav ul li:before{content:''; width:5px; height:1px; background:#fff; opacity:0.4; position:absolute; right:0; top:50%; transform:translateY(-50%) rotate(45deg);}
+
+.basic-table{width:100%; border-top:1px solid #4583c5; border-bottom:1px solid #888; margin-bottom:15px;}
+.basic-table th, .basic-table td{font-size:16px; line-height:26px; padding:13px 20px; border-top:1px solid #ededed; font-weight:400; color:#555; text-align:left; background:#fff;}
+.basic-table th{background:#4583c5; color:#fff; font-weight:500; vertical-align:top;}
+
+.basic-list{background:#fafafa; padding:20px 30px; box-sizing:border-box; display:block; overflow:hidden;}
+.basic-list li{font-size:16px; line-height:28px; color:#555; padding:5px 0 5px 15px; position:relative; box-sizing:border-box;}
+.basic-list li:before{content:''; width:3px; height:3px; background:#888; transform:rotate(45deg); position:absolute; left:0; top:18px;}
+.basic-list li b{font-weight:500;}
+
+.s-title{width:100%; text-align:center; margin:80px 0 50px; overflow:hidden;}
+.s-title h2{font-size:32px; color:#444;}
+
+.s-section{width:100%; min-height:400px; padding-bottom:7%; overflow:hidden;}
+.n-p-b{padding-bottom:0 !important;}
+.section-wrap{width:100%; max-width:1200px; margin:0 auto;}
+.b-contents{width:100%; margin-bottom:50px; overflow:hidden;}
+.gray-bg{background:#fafafa; padding:50px 0 100px; overflow:hidden;}
+.float-r{float:right;}
+
+.c-title{margin-bottom:10px;}
+.c-title h4{font-size:22px; font-weight:500; color:#444; padding-left:15px; position:relative;}
+.c-title h4:before{content:''; width:7px; height:7px; background:#71a820; opacity:0.8; position:absolute; left:0; top:4px;}
+
+
+/*btn-fixed*/
+.btn-up-wrap{position:fixed; right:50px; bottom:50px; z-index:999; transition:all 0.4s;}
+.btn-up{transition:all 0.4s; width:46px; text-align:center; cursor:pointer; color:#b8b8b8; height:46px; box-sizing:border-box; display:block; border:1px solid #dbdbdb; font-size:22px; line-height:46px; /* background:rgba(255,255,255,0.9); */ opacity:0;}
+.btn-up:hover{color:#555; border-color:#555;}
+
+/* scrollMotion */
+.scrollMotion{display:flex; height:400px;} 
+.scrollMotion .imgCont{position:relative; width:50%;}
+.scrollMotion .imgCont .img{position:absolute; top:0; right:0; width:600px; height:100%; overflow:hidden; transition:all 1s ease-out;}
+.scrollMotion .imgCont .img img{position:absolute; top:0; right:0;}
+.scrollMotion.active .imgCont .img{width:100%;}
+
+/* wave */
+/* .wave{position:absolute; width:100%; height:150px; top:-150px; left:0; bottom:0; overflow:hidden; z-index:1;} */
+.wave{position:relative; width:100%; height:150px; top:0; left:0; bottom:0; overflow:hidden; z-index:1;}
+
+
+
+/*========================================
+	sub1-1 비전
+==========================================*/
+
+
+
+/*========================================
+	sub2-1 유역통합물관리
+==========================================*/
+.b-intro{position:relative; padding-bottom:40px;}
+.b-intro-txt-wrap{width:100%; max-width:1200px; background:#fafafa; min-height:400px; position:absolute; top:40px; z-index:-1;}
+.b-intro-txt-wrap:before{content:''; width:50%; min-height:400px; background:#fafafa; position:absolute; right:-50%;}
+.b-intro-txt{padding-left:40px; box-sizing:border-box; position:absolute; top:calc(50% - 20px); transform:translateY(-50%);}
+.b-intro-title{margin-bottom:30px;}
+.b-intro-title img{display:block; max-width:100%; margin-bottom:10px;}
+.b-intro-title h3{font-size:26px; color:#444; font-weight:500;}
+.b-intro-title p{text-align:justify;}
+
+.basin-map-img img{max-width:100%; display:block; margin:0 auto;}
+
+.sol-box{width:100%; position:relative; padding:20px 0; overflow:hidden;}
+.sol-img-wrap{width:50%; max-width:500px; overflow:hidden;}
+.sol-img{min-height:500px; background-size:cover !important; background-position:center center !important; transform:scale(1) rotate(0deg); transition:transform 2s linear;}
+.sol-img.on{transform:scale(1.08) rotate(0.1deg);}
+.sol-box-txt{width:90%; max-width:800px; padding:50px; box-sizing:border-box; background:#fff; position:absolute; top:50%; right:0; transform:translateY(-50%);}
+.sol-box-txt .tit{color:#444; margin-bottom:30px;}
+.sol-box-txt .tit h4{font-size:18px; font-weight:400;}
+.sol-box-txt .tit h2{font-size:36px;}
+.sol-box-txt p{text-align:justify; margin-bottom:40px;}
+.sol-box-txt .btn-more{margin:0;}
+
+.sol-box2 .sol-img-wrap{float:right;}
+.sol-box2 .sol-box-txt{right:auto; left:0;}
+
+
+/*========================================
+	sub4-2 소규모 공공하수처리
+==========================================*/
+.s-f-wrap{width:100%; background:#fff; border:1px solid #eee; box-sizing:border-box; margin:20px 0; overflow:hidden;}
+.s-f-img{width:100%; padding:40px; box-sizing:border-box;}
+.s-f-img img{max-width:100%; display:block; margin:10px auto;}
+.s-f-img h4{font-size:18px; font-weight:500; color:#555; text-align:center;}
+.s-f-wrap .basic-list li{width:50%; float:left;}
+.s-f-wrap .basic-list li:first-child{width:100%;}
+
+.s-e-img{width:calc(100% - 10px);}
+.s-e-img img{max-width:100%; display:block; margin:10px 0;}
+.s-e-img h4{font-size:18px; font-weight:500; color:#555; text-align:center;}
+
+.patent-txt{background:#fff; padding:20px; box-sizing:border-box; overflow:hidden; margin-top:20px; border:1px solid rgba(17, 95, 173, 0.4);}
+.patent-txt h4{font-size:18px; font-weight:400; color:#555; text-align:center;}
+
+.merit-wrap ul{text-align:center; width:100%;}
+.merit-wrap ul li{width:calc(33.33% + 35px);/*  float:left; */ min-height:180px; border-radius:90px; box-sizing:border-box; position:relative; margin-left:-60px; display:inline-table;}
+.merit-wrap ul li:first-child{margin-left:0; background:rgba(17, 95, 173, 0.1);}
+.merit-wrap ul li:nth-child(2){background:rgba(17, 95, 173, 0.2);}
+.merit-wrap ul li:nth-child(3){background:rgba(17, 95, 173, 0.3);}
+.merit-wrap ul li p{position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); text-align:center; width:70%;}
+
+.s-q-wrap ul{text-align:center; width:100%;}
+.s-q-wrap ul li{display:inline-table; width:calc(25% - 10px); max-width:260px; min-height:260px; background:rgba(255,255,255,0.5); box-sizing:border-box; border-radius:130px; position:relative; margin:0 5px; border:1px dashed rgba(17, 95, 173, 0.2);}
+.s-q-wrap ul li h4{position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); text-align:center; width:80%; font-size:22px; color:#555; line-height:36px;}
+.s-q-wrap ul li h4 span{font-size:18px; font-weight:400; display:block;}
+
+
+
+
+
+
+
+@media all and (max-width:1199px){
+	#header.fixed .lang{right:80px;}
+	#sub-top .s-top-title{top:calc(50% + 40px);}
+	
+	.btn-up-wrap{right:20px; bottom:20px;}
+	
+	.s-f-wrap .basic-list li{width:100%;}
+	.s-q-wrap ul li{margin:0;}
+}
+
+@media all and (max-width:767px){
+	#header.fixed{height:60px; padding:0 20px;}
+	#header.fixed .logo{top:7px;}
+	#header.fixed .logo img{max-width:60%;}
+	#header.fixed .lang{top:20px;}
+	#header.fixed .ham{right:10px;}
+	
+	.sub-top-bg{height:360px;}
+	#sub-top .s-top-title{top:calc(50% + 20px);}	
+	#sub-top .s-top-title h1{font-size:36px;}
+	.sub-nav{right:20px; bottom:20px;}
+	
+	.s-title{margin:50px 0 40px;}
+	.s-title h2{font-size:28px;}
+	
+	.c-title h4{font-size:18px;}
+	
+	.basic-list li{font-size:14px; line-height:26px;}
+	
+	/*유역통합물관리*/
+	.scrollMotion{height:300px;}
+	.scrollMotion .imgCont .img, .scrollMotion .imgCont{width:100%;}
+	
+	.b-intro{padding-bottom:0;}	
+	.b-intro-txt-wrap{position:static; top:auto; min-height:auto; overflow:hidden;}
+	.b-intro-txt-wrap:before{width:0;}
+	.b-intro-txt{position:static; transform:none; padding:30px;}
+	.b-intro-title{margin-bottom:20px;}
+	.b-intro-title h3{font-size:22px;}
+	.b-intro-title img{max-height:30px; margin-bottom:5px;}
+	
+	.sol-img-wrap{width:100%; max-width:100%;}
+	.sol-img{min-height:300px;}
+	.sol-box2 .sol-img-wrap{float:none;}
+	
+	.sol-box-txt{padding:30px; transform:none; position:relative; margin:-100px auto 0;}
+	.sol-box-txt .tit{margin-bottom:20px;}
+	.sol-box-txt .tit h2{font-size:26px;}
+	.sol-box-txt p{font-size:14px; margin-bottom:30px;}
+	
+	/*소규모공공하수처리*/
+	.s-f-img h4, .s-e-img h4, .patent-txt h4{font-size:16px; line-height:26px;}
+	.merit-wrap ul li{width:100%; min-height:120px; margin-left:0;}
+	.merit-wrap ul li p{width:80%;}
+	.s-q-wrap ul li{min-height:200px;}
+	.s-q-wrap ul li h4{font-size:18px; line-height:30px;}
+	.s-q-wrap ul li h4 span{font-size:14px;}
+	
+		
+}
+
+@media all and (max-width:525px){
+	
+	.s-e-img img{width:100%;}
+	
+}
+
+@media all and (max-width:360px){
+	
+}
