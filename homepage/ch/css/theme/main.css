@@ -76,17 +76,17 @@
 }
 
 #slide .unslider-wrap li:nth-of-type(1) {
-  background: url(../../images/theme/main/main-slide01.jpg) no-repeat center center;
+  background: url(../../images/theme/main/kr_main/main-slide04.jpg) no-repeat center center;
   background-size: cover;
 }
 
  #slide .unslider-wrap li:nth-of-type(2) {
-  background: url(../../images/theme/main/main-slide02.jpg) no-repeat center center;
+  background: url(../../images/theme/main/kr_main/main-slide02.jpg) no-repeat center center;
   background-size: cover;
 }
 
 #slide .unslider-wrap li:nth-of-type(3) {
-  background: url(../../images/theme/main/main-slide03.jpg) no-repeat center center;
+  background: url(../../images/theme/main/kr_main/main-slide03.jpg) no-repeat center center;
   background-size: cover;
 }
 
