@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+
+#header{width:100%; padding:50px 50px 0; box-sizing:border-box; position:fixed; top:0; left:0; z-index:999; transition:all 0.4s;}
+#header .logo{position:absolute; left:50px; transition:all 0.4s;}
+#header .logo img{display:inline-block; max-width:100%; transition:all 0.4s;}
+
+#header .menu{float:right;}
+#header .menu > ul > li{float:left; margin:0 35px; text-align:center; }
+#header .menu > ul > li > a{font-size:18px; color:#fff; line-height:45px;cursor:pointer; box-sizing:border-box; display:block; padding-bottom:10px;}
+#header .btn-inquiry{background:#232e84; border-radius:25px; padding:0 35px !important; display:block; line-height:37px !important; font-size:16px !important; margin:4px 0; transition:all 0.4s;}
+#header .btn-inquiry:hover{background:#fff; color:#232e84;}
+
+#header .sub-menu{display:none; background:rgba(35,46,132,0.9); position:absolute; z-index:999; width:100%; max-width:180px; padding:10px 0; transition:all 0.4s; margin-left:-60px;}
+#header .sub-menu li{box-sizing:border-box; text-align:left;}
+#header .sub-menu li a{font-size:16px; color:#fff; padding:12px 20px; box-sizing:border-box; display:block; opacity:0.7; transition:all 0.4s;}
+#header .sub-menu li a:hover{opacity:1;}
+
+/*btn-fixed*/
+.btn-up-wrap{position:fixed; right:50px; bottom:50px; z-index:999; transition:all 0.4s;}
+.btn-up{transition:all 0.4s; width:46px; text-align:center; cursor:pointer; color:#b8b8b8; height:46px; box-sizing:border-box; display:block; border:1px solid #dbdbdb; font-size:22px; line-height:40px; /* background:rgba(255,255,255,0.9); */ opacity:0;}
+.btn-up:hover{color:#555; border-color:#555; background:rgba(255,255,255,0.8);}
+
+
+
+
+
+
+
+/*====================
+	footer
+======================*/
+#footer{width:100%; height:80px !important; padding:0 50px; box-sizing:border-box; overflow:hidden; background:#333; position:relative;}
+footer{position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); width:calc(100% - 100px);}
+#footer ul li{float:left; padding:0 13px; position:relative;}
+#footer ul li:first-child{padding-left:0;}
+#footer ul li:first-child::before{width:0;}
+#footer ul li:before{content:''; width:1px; height:1px; background:#fff; position:absolute; top:53%; left:0;}
+#footer ul li a{font-size:14px; color:#fff; opacity:0.6; transition:all 0.4s; vertical-align:middle;}
+#footer ul li a:hover{opacity:0.8;}
+#footer p{text-align:right; font-size:14px; color:#fff; opacity:0.6; float:right; display:inline-block;}
+
+
+@media all and (max-width:1199px){
+	#header{padding:25px 30px 0;}
+	#header .logo{left:30px;}
+	
+	.ham{padding:5px 10px; box-sizing:border-box; display:inline-block; position:absolute; right:25px;}
+	.ham .line{display:block; width:24px; height:1px; background:#fff; margin:7px auto; transition:all 0.4s;}	
+	.ham.active .line1{transform:translateY(7px) rotate(45deg);}
+	.ham.active .line2{opacity:0;}
+	.ham.active .line3{transform:translateY(-9px) rotate(-45deg);}
+	
+	.m-menu{width:80%; max-width:260px; display:block; height:100%; background:#232e84; position:fixed; top:0; right:-100%; padding-top:80px; box-sizing:border-box; transition:all 0.4s; visibility:hidden; overflow-y:scroll;}
+	.m-menu.on{right:0; visibility:visible;}
+	.blind{position:fixed; top:0; left:0; bottom:0; width:100%; height:100%; z-index:998; display:none; background:rgba(0,0,0,0.6); transition:all 0.4s;}
+	
+	.m-menu > ul > li{width:100%; margin:0 !important; border-top:1px solid rgba(255,255,255,0.2); text-align:left !important;}
+	.m-menu > ul > li:nth-child(5){border-bottom:1px solid rgba(255,255,255,0.2);}
+	.m-menu > ul > li > a{padding:5px 20px !important; opacity:0.8;}
+	#header .sub-menu{margin-left:0; max-width:none; background:rgba(0,0,0,0.2); position:static; border-top:1px solid rgba(255,255,255,0.2);}
+	
+}
+
+@media all and (max-width:767px){
+	#header{padding:20px 20px 0;}
+	#header .logo{left:20px; top:25px;}
+	#header .logo img{max-width:70%;}
+	
+	#footer{padding:20px 50px; height:auto !important;}
+	footer{width:100%; position:static; transform:none;}
+	#footer ul{width:100%; text-align:center;}
+	#footer ul li{float:none; display:inline-table;}
+	#footer p{text-align:center; float:none; display:block; margin-top:5px; line-height:22px;}
+	
+}
+
+@media all and (max-width:525px){
+	
+}
+
+@media all and (max-width:360px){
+	
+}
