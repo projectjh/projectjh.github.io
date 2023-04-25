@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+
+#pagination{width:100%; margin:20px 0; overflow:hidden; text-align:center; font-size:0;}
+#pagination.p-s01 .page-num{display:inline-block; min-width:20px; height:32px; padding:0 4px; margin:0 2px 4px; position:relative; font-size:16px; line-height:30px; text-align:center; vertical-align:top; color:#888; transition:color 0.4s;}
+#pagination.p-s01 .page-num i{display:inline-block; padding:0 1px; position:relative; font-style:normal;}
+#pagination.p-s01 .page-num i:after{content:''; display:block; width:100%; height:1px; position:absolute; bottom:0; left:0; box-sizing:border-box;}
+#pagination.p-s01 .page-num.current{color:#555; font-weight:500;}
+#pagination.p-s01 .page-num.current i:after{background:#555;}
+#pagination.p-s01 .page-num.first, #pagination.p-s01 .page-num.prev, #pagination.p-s01 .page-num.next, #pagination.p-s01 .page-num.last{font-size:0; background:transparent url(../../images/theme/basic/icon-pagination.png)no-repeat;}
+#pagination.p-s01 .page-num.first{background-position:-30px 0;}
+#pagination.p-s01 .page-num.next{background-position:-60px 0;}
+#pagination.p-s01 .page-num.last{background-position:-90px 0;}
+
+#pagination{width:100%; margin:20px 0; overflow:hidden; text-align:center; font-size:0;}
+#pagination.p-s02 .page-num{display:inline-block; min-width:30px; height:32px; margin:0 2px 4px; position:relative; font-size:14px; line-height:30px; text-align:center; vertical-align:top; color:#888; transition:all 0.4s; border:1px solid #ccc; box-sizing:border-box;}
+#pagination.p-s02 .page-num:hover{border-color:#555;}
+#pagination.p-s02 .page-num i{display:block; padding:0 1px; position:relative; font-style:normal;}
+#pagination.p-s02 .page-num i:after{content:''; display:block; width:100%; height:2px; position:absolute; bottom:-1px; left:0; box-sizing:border-box;}
+#pagination.p-s02 .page-num.current{color:#555; font-weight:500;}
+#pagination.p-s02 .page-num.current i:after{background:#555;}
+#pagination.p-s02 .page-num.first, #pagination.p-s02 .page-num.prev, #pagination.p-s02 .page-num.next, #pagination.p-s02 .page-num.last{font-size:0; background:transparent url(../../images/theme/basic/icon-pagination.png)no-repeat;}
+#pagination.p-s02 .page-num.first{background-position:-30px 0;}
+#pagination.p-s02 .page-num.next{background-position:-60px 0;}
+#pagination.p-s02 .page-num.last{background-position:-90px 0;}
