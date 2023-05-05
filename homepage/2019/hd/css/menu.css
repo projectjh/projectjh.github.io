@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+body{background:url(../images/theme/main/bg-line.png)repeat-y; background-size:100%;}
+#menu{width:100%; max-width:1600px; margin:0 auto; height:80px; transition:all 0.4s;}
+.logo img{display:block; margin-top:30px; width:100%; max-width:195px;}
+
+#main-menu{width:100%; text-align:right; margin-top:20px;}
+#main-menu > ul > li{display:inline-table; width:100%; max-width:140px; text-align:center; line-height:60px;}
+#main-menu > ul > li > a{cursor:pointer; font-size:16px; color:#111; display:block;}
+.sub-menu{display:none; position:absolute; z-index:999; background:rgba(255,255,255,0.8); width:100%; max-width:140px; border:1px solid #ebebeb; border-top:2px solid #203f99;}
+/* .sub-menu:before{content: "\e930"; font-family:'xeicon'; color:#203f99; position:absolute; top:-35px; left:45%;} */
+.sub-menu li{line-height:40px;}
+.sub-menu li a{font-size:14px; color:#333; display:block;}
+.sub-menu li a:hover{background:rgba(32,63,153,0.1);}
+
+.lang{float:right; margin-top:40px;}
+.lang ul li{display:block; float:left; width:45px; height:20px; border-radius:3px; border:1px solid #555; box-sizing:border-box; text-align:center; line-height:18px; margin:0 3px;}
+.lang ul li a{font-size:12px; color:#333; display:block;}
+.lang .selected{background:#203f99;}
+.lang .selected a{color:#fff;}
+
+/*scroll-menu*/
+.scroll-menu{position:fixed !important; z-index:9999; box-shadow:1px 1px 5px #999; height:50px !important; background:#fff; max-width:100% !important;}
+.scroll-menu .logo img{margin:10px 20px !important; max-width:160px;;}
+.scroll-menu #main-menu{margin:0;}
+.scroll-menu #main-menu > ul > li{line-height:50px;}
+.scroll-menu .lang{margin:15px;}
+
+/*btn-fixed*/
+.btn-up-wrap{position:fixed; right:30px; bottom:30px; z-index:999;}
+.btn-up-wrap a{width:40px; height:40px; line-height:40px; text-align:center; cursor:pointer; box-shadow:2px 2px 5px #999; display:block;}
+.btn-inquiry{margin-bottom:15px;}
+.btn-kakao{background:#ffcc00; color:#3c1e1e; font-size:30px;}
+.btn-mail{background:#6a7083; color:rgba(255,255,255,0.8); font-size:20px;}
+.btn-up{background:rgba(234,234,234,0.6);}
+
+#footer{width:100%; overflow:hidden; background:#fff;}
+.foot-list{width:100%; border-top:1px solid #ccc; border-bottom:1px solid #ccc;}
+.foot-list ul{width:100%; max-width:1200px; margin:0 auto; text-align:center; min-height:40px; overflow:hidden;}
+.foot-list ul li{display:inline-table; margin:0 10px; line-height:38px;}
+.foot-list ul li a{font-size:12px; color:#777; padding:5px 0;}
+.foot-list ul li a:hover{opacity:0.8;}
+.copyright{width:100%; max-width:1200px; margin:20px auto; text-align:center;}
+.copyright ul{margin-bottom:10px;}
+.copyright ul li{display:inline-table; margin:0 10px; font-size:12px; color:#777;}
+.copyright p{color:#999; font-size:12px;}
+
+
+@media all and (max-width:1199px){
+	#menu{height:50px;}
+	.logo img{margin:10px 20px; max-width:160px;;}
+	.ham{width:50px; height:50px; line-height:50px; float:right; text-align:center;}
+	.ham a{font-size:30px; display:block; cursor:pointer; color:#576079;}
+	.m-menu-wrap{width:100%; max-width:200px; position:fixed; z-index:9999; display:block; height:100%; top:0; right:-100%; background:#fff;}
+	.menu-shadow{box-shadow:rgba(0,0,0,0.4) 0 0 0 9999px; transition:box-shadow 0.5s;}
+	.blind{position:absolute; top:0; left:0; bottom:0; width:100%; height:100%; z-index:999; display:none; background:rgba(0,0,0,0.6); transition:all 0.4s;}
+	
+	.m-menu{text-align:center !important; position:absolute; top:30px;}
+	.m-menu ul li{max-width:100% !important;}
+	.lang{float:none; margin:0; position:absolute; top:0; width:100%;}
+	.lang ul{border-bottom:1px solid #ccc; overflow:hidden;}
+	.lang ul li{width:50%; border:0; margin:0; border-radius:0; height:30px; line-height:30px;}
+	.m-menu .sub-menu{max-width:100%; border-top:1px solid #ccc; border-bottom:1px solid #ccc; background:#f9f9f9; position:relative;}
+	.m-menu .sub-menu li{border-top:1px dotted #ccc;}
+	.m-menu .sub-menu li:first-child{border-top:0;}
+	
+	.scroll-menu #main-menu{margin-top:20px;}
+	.scroll-menu .lang{margin:0;}
+	.scroll-menu #main-menu > ul > li{line-height:60px;}
+}
+
+@media all and (max-width:767px){
+	
+}
+
+@media all and (max-width:525px){
+	.btn-up-wrap{right:15px; bottom:20px;}
+}
+
+@media all and (max-width:360px){
+	.foot-list ul{padding:5px 0;}
+	.foot-list ul li{line-height:normal;}
+}
+
+
