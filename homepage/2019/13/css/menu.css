@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+header{width:100%;}
+#top-navi{width:100%; height:80px; transition:all 0.5s; background:#fff;}
+#top-navi .top-navi-wrap{width:100%; max-width:1200px; margin:0 auto;}
+#top-navi .sns-icon{padding:25px 0; box-sizing:border-box;}
+#top-navi .sns-icon ul li{float:left; margin:0 5px;}
+#top-navi .logo img{display:block; margin:20px auto; max-width:100%; transition:all 0.5s;}
+#top-navi .user-menu{float:right; line-height:80px;}
+#top-navi .user-menu ul li{float:left; margin:0 10px;}
+#top-navi .user-menu ul li a{font-size:13px; color:#555; font-weight:400;}
+#top-navi .user-menu ul li i{color:#8795af; font-size:20px; vertical-align:middle; padding-right:5px;}
+
+#top-navi .u-m-login li{font-size:13px; color:#888; margin:0 !important;}
+#top-navi .u-m-login li:first-child{margin-right:20px !important;}
+#top-navi .u-m-login .login-name{color:#555; padding:0 5px;}
+#top-navi .u-m-login li i{vertical-align:text-bottom !important;}
+#top-navi .login-mypage a, #top-navi .login-logout a{border:1px solid #374e79; padding:0 10px; box-sizing:border-box; margin-left:-1px; font-size:12px !important;}
+#top-navi .login-logout a{background:#374e79; color:#fff !important;}
+
+#main-menu{width:100%; height:50px; background:#0062b1; position:relative;}
+#main-menu ul{width:100%; max-width:1200px; margin:0 auto; text-align:center;}
+#main-menu ul li{display:inline-table; line-height:50px;}
+#main-menu ul li a{color:#fff; font-size:16px; padding:0 25px; display:block; box-sizing:border-box;}
+#main-menu ul li a:hover{background:rgba(0,0,0,0.2);}
+#main-menu .sub-menu{display:none; position:absolute; background:#2c3e61; top:50px; max-width:260px; height:auto !important; text-align:left; z-index:999;}
+#main-menu .sub-menu li{display:block; line-height:40px;}
+#main-menu .sub-menu li a{font-size:14px;}
+
+.menu-fixed{position:fixed !important; top:0; z-index:9999; box-shadow:0 0 20px #999;}
+
+.m-user-menu, .m-sns-icon{display:none;}
+
+
+.btn-up{position:fixed; width:40px; height:40px; line-height:40px; background:rgba(255,255,255,0.8); box-shadow:2px 2px 5px #555; text-align:center; color:#374e79; cursor:pointer; right:15%; bottom:40px;}
+/*---------------------------------  footer  ---------------------------------------------*/
+#footer{background:#074476; overflow:hidden;}
+#footer .ft-wrap{border-left:1px solid rgba(255,255,255,0.4); border-right:1px solid rgba(255,255,255,0.4);}
+#footer .ft-info{border-right:1px solid rgba(255,255,255,0.4); padding:20px; box-sizing:border-box; overflow:hidden;}
+#footer .ft-info h4{font-size:16px; color:rgba(255,255,255,0.8); margin-bottom:5px;}
+#footer p{font-size:12px; color:rgba(255,255,255,0.6);}
+#footer .ft-info ul li{float:left; font-size:12px; color:rgba(255,255,255,0.6); margin-right:15px; overflow:hidden;}
+#footer .ft-navi{overflow:hidden; box-sizing:border-box; width:100%; text-align:right;}
+#footer .ft-navi ul{float:right; border-bottom:1px solid rgba(255,255,255,0.4); display:block; padding:10px 20px; box-sizing:border-box; width:100%; overflow:hidden;}
+#footer .ft-navi ul li{display:inline-table; line-height:18px; position:relative; padding:0 10px;}
+#footer .ft-navi ul li:last-child{padding-right:0;}
+#footer .ft-navi ul li+li:after{content:""; width:3px; height:3px; border-radius:100%; background:#999; position:absolute; top:50%; left:-1px;}
+#footer .ft-navi ul li a{font-size:12px; color:rgba(255,255,255,0.6); transition:all 0.2s;}
+#footer .ft-navi ul li a:hover{color:rgba(255,255,255,0.9);}
+#footer .copyright{padding:10px 20px; text-align:right; }
+
+@media all and (max-width:1199px){
+	header{height:50px;}
+	#top-navi{height:50px; border-bottom:1px solid #374e79; position:fixed; top:0; z-index:99999;}
+	#top-navi .logo img{margin:10px auto; max-width:220px;}
+			
+	.ham{position:absolute; top:0; padding:10px; display:block;}
+	.ham a{cursor:pointer; display:block; position:absolute; transition:all 0.5s !important;}
+	.ham i{font-size:30px; color:#374e79;}
+	.ham .close{display:none;}
+	
+	.m-menu{position:fixed !important; display:block; z-index:9999; width:220px !important; height:100% !important; left:-100%; top:50px;}
+	.m-menu ul{text-align:left !important;}
+	.m-menu ul li{display:block !important; width:100%; border-bottom:1px solid rgba(255,255,255,0.2); line-height:40px !important;}
+	.m-menu ul li a{font-size:14px !important; padding:0 20px !important;}
+	.m-menu .sub-menu{position:relative !important; top:0 !important; background:rgba(0,0,0,0.4) !important;}
+	.m-menu .sub-menu li{border-bottom:0 !important; border-top:1px solid rgba(255,255,255,0.2);}
+	
+	.m-user-menu, .m-sns-icon{background:rgba(0,0,0,0.1); display:block;}
+	.m-user-menu ul{text-align:center !important; border-bottom:1px dotted rgba(255,255,255,0.6); overflow:hidden;}
+	.m-sns-icon ul{text-align:center !important; border-bottom:1px solid rgba(255,255,255,0.6); padding:5px 0 0; box-sizing:border-box;}
+	.m-user-menu  ul li, .m-sns-icon ul li{float:none; width:auto; line-height:30px !important; border:0; display:inline-table !important;}
+	.m-user-menu ul li{float:left; width:50%; border-right:1px dotted rgba(255,255,255,0.6); box-sizing:border-box;}
+	.m-user-menu ul li:last-child{border-right:0;}
+	.m-user-menu  ul li a, .m-sns-icon ul li a{font-size:12px !important; padding:0 !important; color:rgba(255,255,255,0.8) !important; margin:5px;}
+	.m-user-menu  ul li a i, .m-sns-icon ul li a i{font-size:17px; vertical-align:text-bottom; color:rgba(135,149,175,0.8); padding-right:3px;}
+	.m-user-menu  ul li a:hover, .m-sns-icon ul li a:hover{background:none !important;}
+	
+	.m-u-m-login .m-profile{width:100%; border-bottom:1px dotted rgba(255,255,255,0.6); color:rgba(255,255,255,0.9); font-size:13px; padding:5px 0; border-right:0;}
+	.m-u-m-login .m-profile i{font-size:18px; vertical-align:text-bottom; opacity:0.6;}
+	.m-u-m-login .m-profile strong{padding:0 5px;}
+	
+	.menu-fixed{position:fixed !important; top:50px; z-index:9999;}
+	.menu-shadow{box-shadow:rgba(0,0,0,0.6) 0 0 0 9999px; transition:box-shadow 0.5s;}
+	
+	.btn-up{right:40px;}
+}
+
+
+@media all and (max-width:767px){
+	#footer .ft-info{text-align:center;}
+	#footer .ft-info ul li{float:none; display:inline-table;}
+	#footer .ft-navi{text-align:center; border-top:1px solid rgba(255,255,255,0.4);}
+	#footer .copyright{text-align:center;}	
+}
+
+@media all and (max-width:525px){
+
+}
+
+@media all and (max-width:360px){
+	
+}

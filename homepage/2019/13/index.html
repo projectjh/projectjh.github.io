@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!-- 포탈사이트 검색등록 -->
+<meta name="keywords" content="<?php echo $setupinfo['METAKEYWORD']?>" />
+<meta name="description" content="<?php echo $setupinfo['METADESCRIPTION']?>" />
+<!-- robots read -->
+<meta name="robots" content="index,follow" /><!-- 이 문서도 긁어가고 링크된 문서도 긁어감. -->
+<!-- 
+<meta name="robots" content="noindex,follow" /> 이 문서는 긁어가지 말고 링크된 문서만 긁어감.
+<meta name="robots" content="index,nofollow" /> 이 문서는 긁어가되, 링크는 무시함.  
+<meta name="robots" content="noindex,nofollow" /> 이 문서도 긁지 않고, 링크도 무시함.
+-->
+<!-- 오픈그래프 설정 -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="<?php echo $setupinfo['SITENAME']?>" />
+<meta property="og:description" content="<?php echo $setupinfo['METADESCRIPTION']?>" />
+<meta property="og:image" content="@이미지" />
+<meta property="og:url" content="<?php echo BASEURL;?>" />
+
+<meta name="naver-site-verification" content="bcb79c263d36ba7123c0a66f11b6347f26e7a6b0"/>
+
+<!-- 파비콘 설정 -->
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+<title><?php echo $setupinfo['SITETITLE'];?></title>
+<link rel="stylesheet" href="css/basic.css" type="text/css" />
+<link rel="stylesheet" href="css/menu.css" type="text/css" />
+<link rel="stylesheet" href="css/main.css" type="text/css" />
+<link rel="stylesheet" href="css/unslider.css" type="text/css" />
+<link rel="stylesheet" href="css/unslider-dots.css" type="text/css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
+
+<script src="js/jquery-1.9.1.js"></script>
+<script src="js/unslider-min.js"></script>
+<script src="js/jquery.alphanumeric.js"></script>
+<script src="js/jquery.form.js"></script>
+
+</head>
+
+<body id="top">
+
+<!-- header -->
+<header>
+	<div id="top-navi">
+		<div class="row top-navi-wrap">
+			<div class="col-4 hidden-lg">
+				<div class="sns-icon">
+					<ul>
+						<li><a href="http://bit.ly/2NWCimS" target="_blank"><img src="<?php echo IMG_DIR;?>/thema/main/sns-icon1.png" alt="facebook"></a></li>
+						<li><a href="http://bit.ly/2NWXNE5" target="_blank"><img src="<?php echo IMG_DIR;?>/thema/main/sns-icon2.png" alt="instagram"></a></li>
+						<li><a href="http://bit.ly/2TIDPlM" target="_blank"><img src="<?php echo IMG_DIR;?>/thema/main/sns-icon3.png" alt="naver"></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-4 col-lg-12">
+				<div class="logo"><a href="/"><img src="<?php echo IMG_DIR;?>/thema/main/logo.png" alt="청년금융복지지원센터로고"></a></div>
+			</div>
+			<div class="col-4 hidden-lg">
+				<div class="user-menu">
+					<?php if(!$logged):?>
+						<ul class="u-m-logout">
+							<li><a href="/member/join"><i class="xi-document"></i> 회원가입</a></li>
+							<li><a href="/member/login"><i class="xi-profile-o"></i> 로그인</a></li>
+						</ul>
+					<?php else:?>
+						<ul class="u-m-login">
+							<li><i class="xi-profile"></i><strong class="login-name"><?php echo $logged_data['NAME']?> </strong>님</li>
+							<li class="login-mypage"><a href="/member/mypage">MYPAGE</a></li>
+							<li class="login-logout"><a href="/member/logout">로그아웃</a></li>
+						</ul>
+					<?php endif?>
+				</div>
+			</div>
+		</div>
+		
+		<div class="ham">
+			<a class="open"><i class="xi-bars"></i></a>
+			<a class="close"><i class="xi-close"></i></a>
+		</div>
+	</div><!-- /top-nav -->
+	
+	<div id="main-menu" class="m-menu">
+		<div class="m-user-menu">
+			<?php if(!$logged):?>
+				<ul class="m-u-m-logout">
+					<li><a href="/member/join"><i class="xi-document"></i> 회원가입</a></li>
+					<li><a href="/member/login"><i class="xi-profile-o"></i> 로그인</a></li>
+				</ul>
+			<?php else:?>
+				<ul class="m-u-m-login">
+					<li class="m-profile"><i class="xi-profile"></i><strong><?php echo $logged_data['NAME']?> </strong>님</li>
+					<li><a href="/member/mypage">MYPAGE</a></li>
+					<li><a href="/member/logout">로그아웃</a></li>
+				</ul>
+			<?php endif?>
+		</div>
+		<div class="m-sns-icon">
+			<ul>
+				<li><a href="#"><img src="<?php echo IMG_DIR;?>/thema/main/sns-icon1.png" alt="facebook"></a></li>
+				<li><a href="#"><img src="<?php echo IMG_DIR;?>/thema/main/sns-icon2.png" alt="instagram"></a></li>
+				<li><a href="#"><img src="<?php echo IMG_DIR;?>/thema/main/sns-icon3.png" alt="naver"></a></li>
+			</ul>
+		</div>
+		<ul>
+			<li><a href="#">센터소개</a>
+				<ul class="sub-menu">
+					<li><a href="/center/page/13account">청년13(일+삶)통장사업</a></li>
+					<li><a href="/center/page/directions">오시는길</a></li>
+				</ul>
+			</li>
+			<li><a href="/board/lists/notice">공지사항</a></li>
+			<li><a href="/apl/online/<?php echo $business_info['CATEGORY'];?>">청년13(일+삶)통장사업 신청</a></li>
+			<!-- <li><a href="/apl/registnum">신청확인</a></li> -->
+			<li><a href="#">미션</a>
+				<ul class="sub-menu">
+					<li><a href="/mission/page/showni">쇼미더 머니 미션 이란?</a></li>
+					<li><a href="/mission/page/showni_step1">쇼니 STEP1</a></li>
+					<li><a href="/mission/lists/<?php echo $business_info['CATEGORY'];?>/step1">쇼니 STEP1 미션확인</a></li>
+					<li><a href="/mission/page/showni_step2">쇼니 STEP2</a></li>
+					<li><a href="/mission/lists/<?php echo $business_info['CATEGORY'];?>/step2">쇼니 STEP2 미션확인</a></li>
+					<li><a href="/mission/page/showni_step3">쇼니 STEP3 선택프로그램</a></li>
+					<li><a href="/mission/page/showni_step4">쇼니 STEP4 저축사용계획서 컨설팅</a></li>
+				</ul>
+			</li>
+			<li><a href="/moneyclinic/lists/moneyclinic">머니클리닉</a></li>
+			<!-- <li><a href="/qna/lists/qna">Q&amp;A</a></li> -->
+			<li><a href="javascript:alert('서비스 준비중입니다.\n\n자세한 사항은 062-227-7079 로 연락바랍니다.');" onfocus="this.blur()">Q&amp;A</a></li>
+			<li><a href="/faq/lists/faq1">FAQ</a></li>
+			<!-- <li><a href="javascript:alert('서비스 준비중입니다.');" onfocus="this.blur()">FAQ</a></li>-->
+			<li><a href="/board/lists/pds">자료실</a></li>
+			<li><a href="/board/lists/news">홍보&amp;보도자료</a></li>
+		</ul>
+	</div>	
+</header>
+<!-- /header -->
+
+<!-- slide -->
+<div id="slide" class="main_slider">
+	<ul class="unslider-wrap">
+		<li>
+			<div class="wrap">
+				<div class="slide-text-box">
+					<img src="<?php echo IMG_DIR;?>/thema/main/slide-text01.png" alt="일하는청년의삶을 응원하는 청년13통장일삶">
+				</div> <!-- /slide-text-box -->
+			</div> <!-- /wrap -->
+		</li>
+		<li>
+			<div class="wrap">
+				<div class="slide-text-box2">
+					<img src="<?php echo IMG_DIR;?>/thema/main/slide-text02.png" alt="온라인 금융멘토링 프로그램 Show me the money">
+				</div> <!-- /slide-text-box -->
+			</div> <!-- /wrap -->
+		</li>
+	</ul>	
+	<div class="in"></div>
+</div>
+<!-- /slide -->
+
+<!-- section -->
+<div id="section">
+	<div class="section1">
+		<div class="section-wrap">
+			<div class="section-title"><h1>사업소개</h1></div>
+			
+			<div class="row business">
+				<div class="col-6 col-sm-12">
+					<div class="m-wrap"><img src="<?php echo IMG_DIR;?>/thema/main/business-img.png" alt=""></div>
+				</div>
+				<div class="col-6 col-sm-12">
+					<div class="b-contents">
+						<div class="m-wrap">
+							<div class="s-title">
+								<div class="b-line"></div><h2>청년 13(일+삶)통장</h2>
+							</div><!-- /s-title -->
+							<p>광주광역시에 거주하며 일하는 청년이 10만원씩 10개월간 저축하면 10개월 후 광주광역시 지원금 100만원을 포함해 총 200만원의 여윳돈이 적립되는 통장 사업으로 저임금 근로 청년에게 저축 소액 단기 자산 형성과 금융역량강화, 근로ㆍ생활 역량 강화로 1석 3조를 지원합니다.</p>
+							<br>
+							<ul>
+								<li><p>ㆍ 연      령 : 만 19세~ 만 34세 (변경 될 수 있음)</p></li>
+								<li><p>ㆍ 거 주  지 : 공고일 기준 본인의 주민등록상 주소지가 광주인자.</p></li>
+								<li><p>ㆍ 근로여부 : 근로 유형(상용직/일용직 등)에 관련 없이 공고일 기준으로 근로하는 자</p></li>
+								<li><p>ㆍ 소득기준 : 공고기준에 따라 변경됨.</p></li>
+							</ul>
+							<a class="btn-more" href="/center/page/13account">사업 자세히 알아보기</a>
+							<a class="btn-more btn-more2" href="/apl/online/<?php echo $category_info['CATEGORY'];?>">사업신청 가능 여부 확인하기</a>	
+						</div>
+					</div><!-- /b-contents -->
+				</div>				
+			</div>
+		</div><!-- /section-wrap -->
+	</div><!-- /section1 -->
+	
+	<div class="section2">
+		<div class="section-wrap row">
+			<div class="col-4 col-sm-12">
+				<div class="facebook m-wrap">
+					<div class="s-title s-title2">
+						<div class="b-line"></div><h2>facebook</h2>
+						<a href="https://www.facebook.com/%EC%B2%AD%EB%85%84%EA%B8%88%EC%9C%B5%EB%B3%B5%EC%A7%80%EC%A7%80%EC%9B%90%EC%84%BC%ED%84%B0-589692321504380" target="_blank" class="link-btn"><i class="xi-external-link"></i></a>
+					</div><!-- /s-title -->
+					
+					<div class="f-contents">
+						<div id="fb-root"></div>
+						<script async defer crossorigin="anonymous" src="https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v4.0"></script>
+						<div class="fb-page" data-href="https://www.facebook.com/&#xccad;&#xb144;&#xae08;&#xc735;&#xbcf5;&#xc9c0;&#xc9c0;&#xc6d0;&#xc13c;&#xd130;-589692321504380/" data-tabs="timeline" data-width="338px" data-height="440px" data-small-header="false" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/&#xccad;&#xb144;&#xae08;&#xc735;&#xbcf5;&#xc9c0;&#xc9c0;&#xc6d0;&#xc13c;&#xd130;-589692321504380/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/&#xccad;&#xb144;&#xae08;&#xc735;&#xbcf5;&#xc9c0;&#xc9c0;&#xc6d0;&#xc13c;&#xd130;-589692321504380/">청년금융복지지원센터</a></blockquote></div>
+					</div><!-- /f-conents -->
+				</div><!-- /facebook -->
+			</div><!-- /col-4 -->			
+			
+			<div class="col-8 col-sm-12">
+				<div class="notice m-wrap">
+					<div class="s-title s-title2 s-title3">
+						<div class="b-line"></div><h2>공지사항</h2>
+						<a href="/board/lists/notice" class="link-btn"><i class="xi-plus-square-o"></i></a>
+					</div><!-- /s-title -->
+					<?php if(!$notice_recent):?>
+					<div class="no-notice">
+            			<p>등록된 게시물이 없습니다.</p>
+         			</div><!--/no-notice-->
+					<?php else:?>
+					<div class="n-contents">
+						<?php foreach ($notice_recent as $lt => $v):?>
+						<div class="n-box">
+							<a href="/board/view/notice/<?php echo $v['SEQ'];?>">
+								<h3><?php echo str_cut($v['SUBJECT'], 50)?></h3>
+								<p><?php echo get_dates_or_times($v['REGDT'])?></p>
+								<i class="xi-plus"></i>
+							</a>
+						</div><!-- /n-box -->
+						<?php endforeach;?>
+					</div>
+					<?php endif;?>		
+				</div><!-- /notice -->
+			</div><!-- /col-8 -->
+		</div>
+	</div><!-- /section2 -->
+	
+	<div class="section3">
+		<div class="section-wrap">
+			<div class="section-title section-title2"><h1>SHOW ME THE MONEY</h1></div>
+			
+			<div class="mission-box">
+				<ul>
+					<li><a href="/mission/page/showni_step1">STEP 1<br><span>지출 파악하기</span></a></li>
+					<li><a href="/mission/page/showni_step2">STEP 2<br><span>지출 계획세우기</span></a></li>
+				</ul>
+			</div><!-- /mission-box -->
+			<div class="mission-txt m-wrap">
+				<p>온라인 금융 멘토링 프로그램인 '쇼미더 머니'는 나에게 돈을 보여줘~! 처럼 참여자분들은 실제로 자신의 수입이 통장에 스쳐가는 것이 아니라,<br class="hidden-sm">
+						돈의 흐름을 알아가고 자신의 자산을 효과적으로 관리하면서, 만족하는 소비생활을 할 수 있도록 멘토와 함께하는 <strong>1:1 멘토링 프로그램</strong>입니다.
+				</p>
+				<a class="btn-more btn-more3" href="/mission/page/showni">쇼미더 머니 더 알아보기</a>
+			</div><!-- /mission-txt -->
+		</div>
+	</div><!-- /section3 -->
+	
+	<div class="section4">
+		<div class="section-wrap row">
+			<div id="bannerzone">
+				<ul>
+					<li><a href="http://www.gwangju.go.kr " target="_blank"><img src="<?php echo IMG_DIR;?>/thema/main/banner1.png" alt="광주광역시" /></a></li>
+					<!-- <li><a href="#" target="_blank"><img src="<?php echo IMG_DIR;?>/thema/main/banner2.png" alt="청년금융복지지원센터" /></a></li> -->
+					<li><a href="https://www.youthcenter.go.kr " target="_blank"><img src="<?php echo IMG_DIR;?>/thema/main/banner5.png" alt="온라인청년센터(청년정책의 모든것)" /></a></li>
+					<li><a href="https://gjdreambank.modoo.at/ " target="_blank"><img src="<?php echo IMG_DIR;?>/thema/main/banner6.png" alt="청년드림은행" /></a></li>
+					<li><a href="http://www.gjtheforest.kr/ " target="_blank"><img src="<?php echo IMG_DIR;?>/thema/main/banner7.png" alt="광주청년센터 THE숲" /></a></li>
+					<li><a href="http://www.bohae.co.kr/" target="_blank"><img src="<?php echo IMG_DIR;?>/thema/main/banner3.png" alt="보해양조" /></a></li>
+					<li><a href="#" target="_blank"><img src="<?php echo IMG_DIR;?>/thema/main/banner4.png" alt="광주은행" /></a></li>
+				</ul>
+			</div>
+
+		</div>
+	</div><!-- /section4 -->
+	
+</div>
+<!-- /section -->
+
+<div class="btn-up-wrap">
+	<a class="btn-up"><i class="xi-long-arrow-up"></i></a>
+</div>
+
+
+<!-- footer -->
+<footer id="footer">
+	<div class="section-wrap row ft-wrap">
+		<div class="col-6 col-sm-12">
+			<div class="ft-info">
+				<h4><?php echo $setupinfo['COMNAME']?></h4>
+				<p>[<?php echo $setupinfo['COMZIP']?>] <?php echo $setupinfo['COMADDR1']?></p>
+				<ul>
+					<li>TEL &nbsp; <?php echo $setupinfo['COMTEL']?></li>
+					<li>FAX &nbsp; <?php echo $setupinfo['COMFAX']?></li>
+					<li>E-MAIL &nbsp; <?php echo $setupinfo['COMEMAIL']?></li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-6 col-sm-12">
+			<div class="ft-navi">
+				<ul>
+					<li><a href="/etc/page/terms">이용약관</a></li>
+					<li><a href="/etc/page/privacy">개인정보취급방침</a></li>
+					<li><a href="/etc/page/reject">이메일무단수집거부</a></li>
+				</ul>
+			</div>
+			<div class="copyright"><p>COPYRIGHT ⓒ <?php echo $setupinfo['COMNAME']?>. ALL RIGHTS RESERVED.</p></div>			
+		</div>
+	</div>
+</footer>
+<!-- /footer -->
+</body>
+
+<script src="js/menu.js"></script>
+<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+<script type="text/javascript">
+$(function(){//un- slider 
+	$(".main_slider").unslider({
+		animation: 'fade',
+	    autoplay: true,
+	    arrows: true,
+	    delay:5000
+	});
+	  
+	$(".unslider-nav").wrap("div.in");
+	
+	// 배너존
+	$('#bannerzone ul').bxSlider({
+		auto			: true, 
+		autoHover		: true,
+		speed			: 1000,
+		pause			: 3000,
+		mode			: 'horizontal',	
+		maxSlides		: 5,
+		moveSlides		: 1,
+		slideWidth		: 160,
+		slideMargin		: 40,
+		responsive		: true,
+		pager			: false,
+		autoControls	: true,
+		controls		: true
+	}); 
+
+});
+
+</script>
+
+</html>
