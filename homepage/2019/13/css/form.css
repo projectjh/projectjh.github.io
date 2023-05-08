@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import url("http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css");
+@import url("https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css");
 
 button{border:0; font-family:"Noto Sans KR", sans-serif; cursor:pointer;}
 input[type='button']{border:0; font-family:"Noto Sans KR", sans-serif; cursor:pointer;}
@@ -67,23 +67,23 @@ input:-mos-input-placeholder {
 .join-step ul li img{display:block; float:right; margin-right:10px;}
 .join-step p{font-size:12px; color:rgba(51,51,51,0.8); font-family: 'S-CoreDream-4Regular'; text-align:left; line-height:1; padding-top:2px;}
 .join-step  h4{font-size:15px; color:#333; font-weight:500; text-align:left; margin:0;}
-.join-step ul li:after{content:''; width:9px; height:16px; position:absolute; top:22px; right:-8px; background:url(../../images/thema/sub/step-arrow.png)no-repeat;}
+.join-step ul li:after{content:''; width:9px; height:16px; position:absolute; top:22px; right:-8px; background:url(../images/sub/step-arrow.png)no-repeat;}
 .join-step ul li:last-child:after{background:none;}
 .join-step .step-on{background:#555;}
 .join-step .step-on p{color:rgba(255,255,255,0.8);} 
 .join-step .step-on h4{color:#fff;}
-.join-step .step-on:after{background:url(../../images/thema/sub/step-arrow-on.png)no-repeat;}
+.join-step .step-on:after{background:url(../images/sub/step-arrow-on.png)no-repeat;}
 
 .j-section{width:100%; max-width:900px; margin:0 auto;}
 .j-section h3{font-size:18px; color:#333; margin-bottom:10px;}
-.j-section .terms-box{height:200px; overflow:auto; border:1px solid #ccc; box-sizing:border-box; padding:10px;}
+.j-section .terms-box{height:200px; overflow:auto; border:1px solid #ccc; box-sizing:border-box; padding:10px; background:#fafafa;}
 .j-section .terms-box pre{font-size:14px; color:#555; line-height:26px;font-family:"Noto Sans KR", sans-serif;}
 
 .terms-wrap{width:100%; overflow:hidden;} 
 .agree-wrap{float:right; margin:5px 0 20px;}
 .agree-wrap input[type='checkbox']{position:absolute; opacity:0; cursor:pointer;}
-.agree-wrap input[type='checkbox']  + label{display:inline-block; background:url(../../images/thema/sub/check-off.png)no-repeat; background-position:0 50%; padding-left:20px; font-size:14px; color:#555; cursor:pointer;}
-.agree-wrap input[type='checkbox']:checked + label{display:inline-block; background:url(../../images/thema/sub/check-on.png)no-repeat; background-position:0 50%;}
+.agree-wrap input[type='checkbox']  + label{display:inline-block; background:url(../images/sub/check-off.png)no-repeat; background-position:0 50%; padding-left:20px; font-size:14px; color:#555; cursor:pointer;}
+.agree-wrap input[type='checkbox']:checked + label{display:inline-block; background:url(../images/sub/check-on.png)no-repeat; background-position:0 50%;}
 
 .j-btn-wrap{text-align:center; margin:20px 0;}
 .j-btn-wrap .w-btn, .j-btn-wrap .b-btn{width:100%; max-width:120px; height:40px;  line-height:40px; font-size:13px; display:block; display:inline-table; margin:0 10px; transition:all 0.4s; padding:0 10px; box-sizing:border-box;}
@@ -133,7 +133,7 @@ input:-mos-input-placeholder {
 
 
 /*======================join-step3=============================*/
-.join-end{background:url(../../images/thema/sub/join-end-bg.jpg)no-repeat; background-size:cover; width:100%; max-width:900px; min-height:300px; padding:10px; box-sizing:border-box; margin-bottom:40px; overflow:hidden;}
+.join-end{background:url(../images/sub/join-end-bg.jpg)no-repeat; background-size:cover; width:100%; max-width:900px; min-height:300px; padding:10px; box-sizing:border-box; margin-bottom:40px; overflow:hidden;}
 .j-e-txt{border:1px solid rgba(255,255,255,0.8); min-height:280px; text-align:center; padding:80px 20px; box-sizing:border-box; transition:all 0.4s;}
 .j-e-txt h2{font-size:24px; color:#fff; font-weight:400; margin-bottom:20px;}
 .j-e-txt p{color:#fff;}
