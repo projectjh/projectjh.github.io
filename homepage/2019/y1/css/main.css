@@ -157,7 +157,7 @@ min-height:520px; overflow:hidden; padding:60px 50px; box-sizing:border-box; pos
 /* 배너존 */
 #bannerzone {position:relative; padding:20px 0 20px 140px; box-sizing:border-box; min-height:75px;}
 #bannerzone .bx-controls {position:absolute; left:0; top:0; color:transparent; text-align:center; white-space:nowrap; line-height:20px; width:140px; min-height:75px; background:#fff;}
-#bannerzone .bx-controls-direction a {display:inline-block; overflow:hidden; position:absolute; z-index:1; width:24px; height:24px; border:1px solid #d7dce4; top:24px;}
+#bannerzone .bx-controls-direction a {display:inline-block; overflow:hidden; position:absolute; z-index:1; width:24px; height:24px; border:1px solid #d7dce4; top:24px; left:0;}
 #bannerzone .bx-controls-direction .bx-prev:before{ font-family:'xeicon'; font-size:10px; color:rgba(55,78,121,0.6); content: "\e93b";}
 #bannerzone .bx-controls-direction .bx-next:before{ font-family:'xeicon'; font-size:10px; color:rgba(55,78,121,0.6); content: "\e93e";}
 #bannerzone .bx-controls-direction .bx-next {left:50px;}
