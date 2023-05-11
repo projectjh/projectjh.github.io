@@ -1,0 +1,158 @@
+@charset "utf-8";
+@font-face { font-family: 'S-CoreDream-3Light'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+#sub-top{width:100%; height:280px; overflow:hidden; position:relative; background-size:cover; background-position:center center; background-attachment:fixed;}
+.sub-top1{background:url(../images/sub/sub-top1.jpg)no-repeat;}
+.sub-top2{background:url(../images/sub/sub-top2.jpg)no-repeat;}
+.sub-top3{background:url(../images/sub/sub-top3.jpg)no-repeat;}
+.sub-top4{background:url(../images/sub/sub-top4.jpg)no-repeat;;}
+
+.sub-title{text-align:center; padding:100px 20px; box-sizing:border-box;}
+.sub-title h1{font-size:32px; color:rgba(255,255,255,0.9); font-weight:500;}
+.sub-title ul{text-align:center;}
+.sub-title ul li{display:inline-table; font-size:13px; color:rgba(255,255,255,0.8); padding:0 12px; position:relative;}
+.sub-title ul li a{color:rgba(255,255,255,0.8); transition:color 0.4s;}
+.sub-title ul li a:hover{color:#fff;}
+.sub-title ul li i{font-size:14px;}
+.sub-title ul li:before{content:'\e940'; font-family:'xeicon'; color:rgba(255,255,255,0.7); position:absolute; right:-8px; top:5px; font-size:10px;}
+.sub-title ul li:last-child:before{content:'';}
+
+#sub-nav{width:100%; border-bottom:1px solid #ccc; height:40px;}
+#sub-nav ul{width:100%; max-width:1200px; margin:0 auto;}
+#sub-nav ul li{float:left; box-sizing:border-box; line-height:40px; text-align:center;}
+.sub-nav1 li{width:20%;}
+.sub-nav2 li{width:20%; max-width:240px; margin:0 auto; float:none !important;}
+.sub-nav3 li{width:50%;}
+#sub-nav ul li a{font-size:14px; color:rgba(51,51,51,0.8); display:block; transition:color 0.4s;}
+#sub-nav ul li a:hover{color:#333; font-weight:500;}
+#sub-nav ul .selected{border-bottom:1px solid #006834;}
+#sub-nav ul .selected a{color:#333; font-weight:500;}
+
+/********************************* section *************************************/
+#section{padding-bottom:7%; min-height:600px; box-sizing:border-box;}
+.section-wrap{width:100%; max-width:1200px; margin:0 auto;}
+
+.sub-title2{text-align:center; width:100%; margin:60px 0 40px;}
+.sub-title2 h2{font-size:28px; color:#333; font-weight:500;}
+.ft-yg{color:#c3d600;}
+.ft-green{color:#006834;}
+
+/*-------------------------sub1-1---------------------*/
+.company-img img{display:block; width:100%; max-width:1200px; margin:0 auto;}
+.greeting-intro{text-align:center; border-bottom:1px solid #ccc; width:100%; padding-bottom:30px; margin-bottom:20px;}
+.greeting-intro h3{font-size:22px; color:#006834; letter-spacing:0.2em; font-weight:300; margin-top:10px;}
+.ft-eyn{letter-spacing:normal; font-weight:500;}
+.green-line{width:1px; height:80px; background:#006834; position:relative; z-index:1; margin-top:-45px; left:50%;}
+.greeting-intro p{font-size:16px; color:#333; font-weight:300;}
+.greeting-sign{text-align:right; margin:10px 0;}
+.signature{font-size:18px; font-weight:600; letter-spacing:0.2em; margin-left:10px;}
+
+/*-------------------------sub1-2---------------------*/
+.vision{border-bottom:1px dotted #aaa;}
+.s-s-title{min-height:80px; text-align:center; width:100%; border-right:1px solid #ccc; padding:26px 0; box-sizing:border-box;} 
+.s-s-title h4{font-size:18px; font-weight:500; color:#333; letter-spacing:0.1em;}
+.s-contents{width:100%; padding:0 40px; box-sizing:border-box;}
+.s-contents h4{font-size:18px; color:#006834; font-weight:400; margin:10px 0;}
+.vision-img img{display:block; max-width:100%; border-radius:5px; margin:40px 0 20px;}
+.mission{margin-top:40px;}
+.mission-img{margin:40px 0;}
+.mission-img ul{text-align:center;}
+.mission-img ul li{width:33.3333%; float:left;}
+.mission-img ul li img{display:block; width:95%; max-width:200px; height:95%; border-radius:50%; border:1px solid #ccc; margin:0 auto;}
+
+/*-------------------------sub1-3---------------------*/
+.history{background:url(../images/sub/history-line.gif)repeat-y 200px;/*  overflow:hidden; */ padding:50px 0; position:relative;}
+.history:before{content:''; width:11px; height:11px; background:#ccc; position:absolute; border-radius:50%; top:0; left:195px;}
+.history-box{margin-bottom:40px;}
+.h-year{position:relative; width:100%; max-width:200px; float:left;}
+.h-year h2{ font-family: 'S-CoreDream-3Light'; font-size:28px; color:#006834; text-align:right; padding-right:30px;}
+.h-year:after{content:url(../images/sub/history-dot.gif); width:11px; height:11px; position:absolute; right:-6px; top:8px;}
+.h-contents{margin-left:240px; padding:7px 0;}
+.h-contents ul li{position:relative; margin-bottom:15px; line-height:26px; font-size:14px; color:#555; padding-left:40px;}
+.h-contents ul li span{position:absolute; left:0; top:0; padding-left:5px; color:#333; font-weight:500;}
+.history-img{float:right; text-align:right;}
+.h-img-box{margin-top:50px;}
+.h-img-box img{width:100%;}
+
+/*-------------------------sub1-4---------------------*/
+.brand1{border-bottom:1px dotted #aaa;}
+.brand-logo{width:100%; background:#fff; border:1px solid #ccc; box-sizing:border-box; margin-bottom:10px;}
+.brand-logo img{display:block; max-width:100%; margin:0 auto;}
+.b-slogan{position:relative;}
+.b-slogan h3{font-size:22px; font-weight:300; letter-spacing:0.1em; color:#333; display:inline-block; background:#fbfaf7; padding-right:10px;}
+.b-slogan:before{content:''; width:80%; height:1px; background:#888; position:absolute; top:50%; right:0; z-index:-1;}
+.brand ul{margin:10px 0 20px; overflow:hidden;}
+.brand ul li{font-size:14px; color:#555; line-height:26px; margin:7px 0; font-weight:400; position:relative; padding-left:20px;}
+.brand ul li:before{content:''; width:5px; height:5px; background:#006834; position:absolute; left:0; top:11px;}
+.brand2{margin-top:40px;}
+
+/*-------------------------sub1-5---------------------*/
+.map{width:100%; min-height:360px; box-sizing:border-box; border:1px solid #ccc;}
+.root_daum_roughmap{width:100% !important;/*  max-width:1200px !important; */}
+.addr-title{text-align:left;}
+.addr-title h2{color:#333; font-size:22px; font-weight:500; padding:35px 0;}
+.addr-title2 p{font-size:18px; color:#576079; font-weight:300;}
+.addr-list{padding:20px; box-sizing:border-box; overflow:hidden;}
+.addr-list h3{font-size:22px; font-weight:300; color:#333; margin-bottom:5px;}
+.addr-list h3 span{font-size:18px; margin-right:5px; opacity:0.6;}
+.addr-list ul li{display:inline-table; margin-right:20px;}
+.addr-list ul li:last-child{margin-right:0;}
+
+/*-------------------------sub2-1---------------------*/
+.product-intro{border-left:5px solid #006834; padding:0 20px; box-sizing:border-box;}
+.product-intro h4{font-size:18px; font-weight:400; color:#333; margin-bottom:10px;}
+
+
+
+
+
+
+@media all and (max-width:1199px){
+
+}
+
+@media all and (max-width:767px){
+	#sub-top{height:200px;}
+	.sub-title{padding:70px 20px;}
+	.sub-title h1{font-size:28px;}
+	
+	#sub-nav ul{display:block; width:auto; position:relative; top:40px;}
+	#sub-nav ul li{float:none; width:100%; background:rgba(251,250,247,0.95); display:none;}
+	#sub-nav ul li a{font-size:13px;}
+	#sub-nav ul .selected{display:block; border-bottom:1px solid #ccc; position:absolute; top:-40px;}
+	#sub-nav ul .selected a{position:relative;}
+	#sub-nav ul .selected a:before{content:"\e942"; font-family:'xeicon'; color:#888; position:absolute; right:15px;}
+	#sub-nav ul .after a:before{content:"\e945";}
+	#sub-nav ul.on{box-shadow:0 1px 4px rgba(0,0,0,0.2);}
+	.sub-nav2 li{max-width:100%;}
+	.sub-nav2 li a:before{content:'' !important;}
+	.sub-nav2 li.after a:before{content:'' !important;}
+	
+	.sub-title2{margin:30px 0;}
+	.sub-title2 h2{font-size:22px;}
+	.s-s-title{text-align:left; padding:10px; border-right:0; min-height:auto;}
+	.s-s-title h4{padding:10px 5px; border-bottom:1px solid #ccc; border-top:1px solid #ccc;}
+	.s-contents{padding:0 20px;}
+	.vision{border-bottom:0;}
+	.mission{margin-top:20px;}
+	
+	.history{background-position:120px;}
+	.history:before{left:115px;}
+	.h-year{max-width:120px;}
+	.h-contents{margin-left:160px; padding-right:10px; box-sizing:border-box;}
+	.history-img{float:none; text-align:center;}
+	.h-img-box{width:50%; float:left; padding:0 2px; box-sizing:border-box; margin:10px 0;}
+	
+	.brand1{border-bottom:0;}
+	.addr-title h2{text-align:center; padding:20px 0 0;}
+	.addr-list h3{font-size:18px;}
+}
+
+@media all and (max-width:525px){
+
+}
+
+@media all and (max-width:360px){
+
+}
+
