@@ -201,6 +201,14 @@ body.sub04{ background:#edebeb url('../images/sub/sub_right04.jpg') 100% 0 fixed
 .mixedSlider .MS-controls button:hover{opacity:1;}
 
 
+/*-------------------------sub2-3---------------------*/
+.step-list{width:100%; max-width:50%; margin:0 auto;}
+.step-list li{margin:10px 0; font-size:14px; line-height:26px; color:#404040;}
+.step-list .step{position:relative; font-weight:500; color:#fff; background:#0c3981; border-radius:5px; padding:3px 20px; box-sizing:border-box; margin-right:10px;}
+.step-list .step:before{content:"\e936"; font-family: 'xeicon'; color:#0c3981; font-size:14px; position:absolute; left:40%; bottom:-19px; opacity:0.4;}
+.step-list li:last-child .step:before{content:'';}
+
+
 /*-------------------------sub2-4---------------------*/
 .ceramic-type{margin:10px 10px 20px;}
 .ceramic-type img{max-width:80%;}

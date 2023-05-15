@@ -145,19 +145,34 @@
 .notice .slick-next:before{font-family:'xeicon'; content: "\e93f"; font-size:22px; position:absolute; display:block; top:0; left:0; line-height:22px; color:#888;}
 
 
+@media all and (min-width:1920px){
+	.main-wrap{width:100%;}
+	/* .main-1{max-width:auto !important;} */
+	.main-1, .main-2, .main-3{position:static; min-width:auto; max-width:100%;}
+}
+
 @media all and (max-width:1199px){
-
-
+	.p-l-220{padding-left:220px;}
+	.main-wrap{width:100%; min-height:auto;}
+	.main-1, .main-2, .main-3{position:static; min-width:auto;}
 }
 
 @media all and (max-width:767px){
-
-
+	.p-l-220{padding-left:0;}
+	.main-img{padding-left:0;}
+	.main-text-box{width:70%; left:15%;}
+	.main-text-box h3{font-size:22px;}
+	.main-text-box h1{font-size:36px;}
+	.main-text-box p{font-size:16px;}
+	.slide-text-box h2{font-size:22px;}
+	.c-title h2{font-size:22px;}
+	.perform p{display:none;}
 }
 
 @media all and (max-width:525px){
-
-	
+	/* #slide, #slide .unslider-wrap li{height:300px;} */
+	.cs-center, .tech-inquiry{min-height:auto; padding:40px 25px;}
+	.perform p{display:block;}
 }
 
 @media all and (max-width:360px){
