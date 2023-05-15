@@ -1,0 +1,25 @@
+.da-thumbs {
+	list-style: none;
+	width: 1200px;
+	height: 230px;
+	position: relative;
+	padding: 0;
+}
+
+.da-thumbs li a,
+.da-thumbs li a img {
+	display: block;
+	position: relative;
+}
+.da-thumbs li a {
+	overflow: hidden;
+}
+.da-thumbs li a div {
+	position: absolute;
+	background: rgba(21,74,154,0.9);
+	width: 100%;
+	height: 100%;
+/* 	top:0;
+	left:0; */
+	display:none;
+}
