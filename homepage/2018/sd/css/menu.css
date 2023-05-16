@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+
+#header{width:100%; position:relative;}
+#header .head-border{width:100%; height:3px; background: #e60012; /* Old browsers */
+background: -moz-linear-gradient(left, #e60012 0%, #008dd6 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, #e60012 0%,#008dd6 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, #e60012 0%,#008dd6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e60012', endColorstr='#008dd6',GradientType=1 ); /* IE6-9 */}
+#header .logo-wrap{width:100%; max-width:1200px; margin:0 auto; position:relative;}
+#header .logo img{width:100%; max-width:200px; display:block; margin:15px auto;}
+#header .lang{position:absolute; right:0; top:5px;}
+#header .lang ul li{float:left; margin-left:7px;}
+#header .lang ul li a{display:block; border:1px solid #ccc;}
+#header .lang ul li a img{display:block;}
+
+#header .main-menu{width:100%; background:#111; height:40px;}
+#header .main-menu > ul{width:100%; max-width:1200px; margin:0 auto;}
+#header .main-menu > ul > li{width:20%; text-align:center; line-height:40px; box-sizing:border-box; float:left;}
+#header .main-menu > ul > li > a{color:#fff; font-size:15px; font-weight:600; display:block; cursor:pointer;}
+#header .main-menu > ul > li > a:hover{background:#008dd6;}
+
+#header .sub-menu{width:100%; height:40px; background:rgba(0,15,67,0.6); position:absolute; z-index:999; display:none; left:0;}
+#header .sub-menu ul{width:100%; max-width:1200px; margin:0 auto; text-align:center;}
+#header .sub-menu ul li{line-height:40px; display:inline-table;}
+#header .sub-menu ul li a{font-size:14px; color:rgba(255,255,255,0.6); margin:0 20px;}
+#header .sub-menu ul li a:hover{color:#fff;}
+
+
+
+/*quick*/
+#quick{position:absolute; bottom:100px; z-index:9999; right:0;}
+#quick .inquiry ul{width:50px;}
+#quick .inquiry ul li:first-child{background:#008dd6; border-radius:5px 0 0 0; width:50px; height:120px; padding-top:5px; box-sizing:border-box;}
+#quick .inquiry ul li:first-child a{font-size:14px; color:#fff; display:block; text-align:center; line-height:50px; letter-spacing:0.1em;}
+#quick .inquiry ul li:first-child i{font-size:16px; margin-bottom:-7px;}
+#quick .inquiry ul li:last-child{background:#111; border-radius:0 0 0 5px; width:50px; height:35px;}
+#quick .inquiry ul li:last-child a{font-size:10px; color:#fff; display:block; text-align:center; cursor:pointer;}
+
+
+
+
+
