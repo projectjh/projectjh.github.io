@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+#menu{width:100%; background:rgba(255,255,255,0.8); height:65px; position:absolute; top:0; z-index:999;}
+#menu .menu-wrap{width:100%; max-width:1200px; margin:0 auto;}
+#menu .top-logo img{display:block; padding:7px 5px; width:100px;}
+
+#menu .main-menu > ul{float:right;}
+#menu .main-menu > ul > li{float:left; width:130px; line-height:63px; text-align:center; height:63px;}
+#menu .main-menu > ul > li > a{font-size:16px; color:#333;}
+#menu .main-menu ul li a{cursor:pointer; display:block;}
+
+#menu .sub-menu-wrap{display:none; position:absolute; z-index:-10; background:rgba(255,255,255,0.7); width:100%; left:0; border-top:1px solid #1c2951; border-bottom:1px solid #1c2951; height:230px; top:65px;}
+#menu .sub-menu{ display:none;  width:130px; padding:10px 0; height:210px; position:absolute;}
+#menu .sub-menu2{margin-left:130px;}
+#menu .sub-menu li{line-height:30px;}
+#menu .sub-menu li a{font-size:14px; color:#555;}
+#menu .sub-menu li a:hover{font-weight:600; color:#1c2951;}
+
+#menu .lang ul{float:right;}
+#menu .lang ul li{float:left; padding:22px 3px;}
+#menu .lang ul li img{border:1px solid #ccc; display:block;}
+
+#menu .ham{display:none; float:right;}
+#menu .ham a{font-size: 35px; line-height:50px; color:#333; display:block; margin-right:5px;}
+
+#menu .mobile-lang{display:none;}
+
+
+@media all and (max-width:1199px){
+	#menu{height:50px;}
+	#menu .top-logo img{width:80px;}
+	#menu .ham{display:block;}
+	#menu .mobile-menu{position:absolute; width:100%; top:50px; left:0; background:rgba(255,255,255,0.7); border-top:1px solid #1c2951; border-bottom:1px solid #1c2951;}
+	#menu .mobile-menu ul{float:none;}
+	#menu .mobile-menu ul li{float:none; width:auto; line-height:35px; height:auto;}
+	#menu .mobile-menu ul li a{font-size:14px;}
+	#menu .mobile-sub{width:auto; height:auto !important; position:static; background:rgba(0,0,0,0.2);}
+	#menu .mobile-sub li a{font-size:12px; color:#333;}
+	#menu .mobile-lang{display:block;}
+	#menu .mobile-lang > li{float:left !important; width:50% !important; box-sizing:border-box; border-top:1px solid #999; border-right:1px solid #999;}
+	#menu .mobile-lang > li:last-child{border-right:0;}
+	#menu .mobile-lang > li a{font-size:12px !important; line-height:30px !important;}
+	#menu .mobile-lang .selected{background:rgba(0,0,0,0.2);}
+}
+
+
+@media all and (max-width:767px){
+
+}
+
+@media all and (max-width:525px){
+
+}
+
+
+
