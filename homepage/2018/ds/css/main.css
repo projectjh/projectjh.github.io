@@ -1,0 +1,128 @@
+/* section1 */
+.section1{margin-bottom:5%;}
+.gallery{padding-bottom:50%;}
+.gallery-text{position:absolute; z-index:999; top:15%; left:25%;}
+.gallery-text h1{font-size:50px; font-weight:700; color:#fff; text-shadow:2px 2px 1px #000; font-style:italic; margin:0;}
+.gallery-text p{font-size:18px; color:#fff; font-weight:500; text-shadow:1px 1px 1px #000; }
+
+.section-title h1{float:left; margin:0; margin-right:20px;}
+.section-title p{color:#999; line-height:60px; letter-spacing:-1px;}
+.section-title p span{color:#ff8a00;}
+
+/* section2 */
+.section2{margin-bottom:5%;}
+.main_cer ul li{width:16.6666667%; float:left; box-sizing:border-box; text-align:center; border-right:1px solid #ccc;}
+.main_cer ul li:last-child{border-right:0;}
+.main_cer ul li img{width:50%; display:bloc; margin:0 auto;}
+.main_cer ul li p{color:#666; font-weight:600;}
+
+/* section3*/
+.section3{margin-bottom:5%;}
+.product_wrap{padding:5px; box-sizing:border-box; overflow:hidden;}
+.product_wrap a{text-align:center; padding:35% 0; display:block;}
+.product h1{font-size:60px; color:#fff; font-weight:700; margin:0}
+.product p{font-size:32px; color:#fff; font-weight:700; margin-top:-25px;}
+.product{width:100%; max-width:360px; margin:0 auto;}
+/* .product1{background:url(../images/black.jpg)no-repeat;}
+.product2{background:url(../images/blue.jpg)no-repeat;}
+.product3{background:url(../images/yellow.jpg)no-repeat;}
+.product4{background:url(../images/red.jpg)no-repeat;}
+.product5{background:url(../images/orange.jpg)no-repeat;}
+.product6{background:url(../images/natural.jpg)no-repeat;}
+.product7{background:url(../images/green.jpg)no-repeat; }
+.product8{background:url(../images/brown.jpg)no-repeat; }
+.product1:hover {background:url(../images/ho_black.jpg)no-repeat;}
+.product2:hover{background:url(../images/ho_blue.jpg)no-repeat;}
+.product3:hover{background:url(../images/ho_yellow.jpg)no-repeat;}
+.product4:hover{background:url(../images/ho_red.jpg)no-repeat;}
+.product5:hover{background:url(../images/ho_orange.jpg)no-repeat;}
+.product6:hover{background:url(../images/ho_natural.jpg)no-repeat;}
+.product7:hover{background:url(../images/ho_green.jpg)no-repeat;}
+.product8:hover{background:url(../images/ho_brown.jpg)no-repeat;} */
+.product_wrap a:hover h1{color:#000;}
+.product_wrap a:hover p{color:#000;}
+
+/* section4 */
+.section4{margin-bottom:5%;}
+.unslider{position:relative;}
+.unslider-nav {position: absolute; z-index: 999; bottom:0; width:100%;background:#e9e9e9;}
+.unslider-nav ol{width:100%; max-width:1200px; margin:0 auto;}
+.unslider-nav ol li {width:120px; height:76px; background:#e9e9e9 !important; float:left; font-size:28px; font-weight:700; text-align:center; line-height:76px; cursor:pointer;}
+.unslider-nav ol li.unslider-active {background: #ff7800 !important;}
+
+.in {width:100%; max-width:1472px; margin:0 auto; position: relative;}
+
+#slide {width:100%; position:relative;}
+#slide .unslider-wrap li {height:715px;}
+/* #slide .unslider-wrap li:nth-of-type(1) {background: url(../images/effect1.jpg) no-repeat center center; background-size: cover;}
+#slide .unslider-wrap li:nth-of-type(2) {background: url(../images/effect2.jpg) no-repeat center center; background-size: cover;}
+#slide .unslider-wrap li:nth-of-type(3) {background: url(../images/effect3.jpg) no-repeat center center; background-size: cover;}
+#slide .unslider-wrap li:nth-of-type(4) {background: url(../images/effect4.jpg) no-repeat center center; background-size: cover;}
+#slide .unslider-wrap li:nth-of-type(5) {background: url(../images/effect5.jpg) no-repeat center center; background-size: cover;}
+#slide .unslider-wrap li:nth-of-type(6) {background: url(../images/effect6.jpg) no-repeat center center; background-size: cover;}
+#slide .unslider-wrap li:nth-of-type(7) {background: url(../images/effect7.jpg) no-repeat center center; background-size: cover;}
+#slide .unslider-wrap li:nth-of-type(8) {background: url(../images/effect8.jpg) no-repeat center center; background-size: cover;}
+#slide .unslider-wrap li:nth-of-type(9) {background: url(../images/effect9.jpg) no-repeat center center; background-size: cover;}
+#slide .unslider-wrap li:nth-of-type(10) {background: url(../images/effect10.jpg) no-repeat center center; background-size: cover;} */
+
+.effect-wrap{background:rgba(0,0,0,0.5); width:100%; max-width:720px; margin-top:10%; padding-bottom:5%;}
+.effect-wrap h2{padding:7% 0 3% 8%; font-size:32px; color:#ff8a00; margin:0;}
+.effect-wrap p{padding:0 8% 1% 8%; font-size:16px; color:#fff; margin:0;}
+
+/* section5 */
+.section5{margin-bottom:5%;}
+.map_wrap{width:100%; position:relative;}
+.map_wrap img{max-width:100%;}
+.map-text{background:rgba(75,88,136,0.8); position:absolute; width:100%; bottom:0; }
+.map-text p{text-align:center; margin:0; padding:30px 0; color:#fff;}
+
+.contact-box ul{min-height:613px; background:#d2d5e2; }
+.contact-box ul li{margin:0 5%; padding:20px; box-sizing:border-box; border-bottom:1px solid #ccc;}
+.contact-box ul li:last-child{border:0;}
+.contact-box ul li img{float:left; margin-right:15px; max-width:40px;}
+.contact-box h2{margin:0; color:#4b5888;}
+.contact-box p{color:#666;}
+.contact-box h3{margin:0; font-size:18px; padding:10px 0; color:#333;}
+
+@media all and (max-width:1199px){
+	/* section1 */
+	.gallery-text h1{font-size:40px;}
+	.gallery-text p{font-size:16px;}
+	.pignose-gallery .pignose-gallery-thumbnails a img {padding-top:0;}
+	/* section3 */
+	.unslider-nav ol{width:100%; max-width:800px; margin:0 auto;}
+	.unslider-nav ol li{width:80px; height:68px; font-size:22px; line-height:68px;}
+	#slide .unslider-wrap li{height:500px;}
+	/* section4 */
+	.map-text{margin-top:-11.5%; }
+}
+
+
+@media all and (max-width:767px){
+	/* section1 */
+	.gallery-text{left:5%;}
+	.gallery-text h1{font-size:30px;}
+	.gallery-text p{font-size:14px;}
+	
+	/* section2 */
+	.product_wrap a{padding:25% 0;}
+	
+	/* section3 */
+	.unslider-nav ol{width:100%; max-width:600px; margin:0 auto;}
+	.unslider-nav ol li{width:60px; height:60px; font-size:18px; line-height:60px;}
+	#slide .unslider-wrap li{height:450px;}
+	
+	/* section4 */
+	.section4{margin:0;}
+	.contact-box ul{height:350px;}
+	.contact-box ul li{margin:0; width:50%; float:left; box-sizing:border-box; height:50%; border-bottom:2px solid #fff;}
+	.contact-box ul li:nth-child(2n+1){border-right:2px solid #fff;}
+	.contact-box ul li:nth-child(3){border-bottom:0;}
+}
+
+@media all and (max-width:525px){
+	.main_cer ul li{width:33.33333334%; border:0;}
+
+}
+
+

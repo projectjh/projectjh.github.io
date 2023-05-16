@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+/*.left_menu_wrap{border-right:1px solid #eaeaea;}*/
+.left_menu{margin-top:15%;}
+.logo img{display:block; margin:0 auto; width:100%; max-width:250px;}
+.orange_line{width:50%; margin:20px auto 0; height:3px; background:#ff8a00;}
+.logo_text{text-align:center; font-size:15px; color:#666; margin:5px 0; font-weight:300;}
+
+.main_menu{margin-top:40px;}
+.main_menu > ul > li{text-align:center; padding:20px 0; cursor:pointer;}
+.main_menu > ul > li > a{font-size:19px; font-weight:600; color:#555; letter-spacing:-1px;}
+
+.sub_menu{display:none; margin-top:20px; background:#fafafa; border-top:2px solid #ff8a00;}
+.sub_menu li{padding:5px 0; border-bottom:1px solid #eaeaea;}
+.sub_menu li:hover{background:#f2f2f2;}
+.sub_menu li a{color:#666; display:block;}
+
+
+.lang{width:100%; border-top:1px solid #eaeaea; border-bottom:1px solid #eaeaea; padding:5px 0; margin-top:260px;}
+.lang .ko{width:50%; float:left;}
+.lang .ko a{font-size:14px; color:#333; float:right; padding-right:15px; line-height:25px;}
+.lang .en a{font-size:14px; color:#333; padding-left:15px; line-height:25px;}
+.lang a:hover{color:#ccc;}
+
+.left_footer{margin-top:20px; padding:0 10%;}
+.left_footer .copy{width:100%; text-align:center;}
+.left_footer .copy a{font-size:13px; color:#555; font-weight:300; letter-spacing:-1px; padding:0  5px;}
+.left_footer .copy a:first-child{padding-left:0;}
+.left_footer .copy a:hover{color:#ff8a00;}
+.left_footer .copy span{font-size:10px;}
+.left_footer p{font-size:14px; color:#ccc; }
+
+.contents{padding:3%; border-left:1px solid #eaeaea;}
+.mobile-top{display:none; padding:10px;}
+.ham img{float:left; display:block; padding:5px 0;}
+.m_logo img{margin:0 auto; display:block;}
+.close{display:none;}
+
+@media all and (max-width:1199px){
+	.contents{width:100%; padding:0;}
+	.mobile-top{display:block;}
+	.left_menu_wrap{display:none; width:30%; position:absolute; z-index:9999; background:#fff; border-right:1px solid #eaeaea; border-bottom:1px solid #eaeaea;}
+	.left_menu{margin-top:0; margin-bottom:50%;}
+	.close{display:block; margin:5% 0 5% 85%; font-size:30px; overflow:hidden; color:#ccc; cursor:pointer;}
+}
+
+
+@media all and (max-width:767px){
+	.left_menu_wrap{width:50%;}
+}
+
+@media all and (max-width:525px){
+	.left_menu_wrap{width:70%;}
+}

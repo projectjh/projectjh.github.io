@@ -1,0 +1,10 @@
+#footer{background:#eee;}
+ .foot_menu{box-sizing:border-box; overflow:hidden; padding:3%;}
+ .foot_menu > ul > li{float:left; width:20%; text-align:center; border-right:1px solid #ccc; box-sizing:border-box;}
+  .foot_menu > ul > li:last-child{border:0;}
+ .foot_menu > ul > li > a{font-size:20px; color:#333; font-weight:600;}
+.foot_submenu{padding:10% 20%;}
+.foot_submenu li{text-align:left; padding-bottom:10px; }
+.foot_submenu li a{color:#666;}
+.foot_menu a:hover{color:#ff8a00;}
+.copyright{background:#b8b8b8; text-align:center; color:#fff; font-weight:600; padding:20px 0 50px 0;}

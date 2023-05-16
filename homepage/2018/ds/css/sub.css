@@ -1,0 +1,256 @@
+/* 공통 */
+.sub-top-text{background:rgba(0,0,0,0.5); padding:1.5% 10%;}
+.sub-top-text h1{color:#fff; font-size:45px; font-weight:700; margin:0; }
+.sub-top-text h2{color:#ff8a00; font-size:32px; font-weight:700; margin:-10px 0 0 0;}
+.sub-top-text p{color:#ededed; font-size:18px; margin:10px 0;}
+
+.top-box{background:#4b5888; width:100%; height:60px;}
+.top-box ul{float:right;}
+.top-box ul li{float:left; color:#fff; font-size:18px; line-height:55px; padding:0 5px; }
+.top-box ul li:last-child{font-weight:600; padding-right:20px;}
+.top-box ul li a{color:#fff; font-size:18px;}
+
+.section1, .section3, .section4, .section5, .section6, .section7, .section8{margin-bottom:5%;}
+.section2{margin-bottom:3%;}
+
+.section-title h1{display:inline-block; background:#fff; padding-right:40px; font-size:40px;}
+.section-title-line{width:100%; height:2px; background:#000; margin-top:-50px;}
+.section-title p{font-size:18px; color:#999; margin-top:30px;}
+
+.sub-title{margin-bottom:2%;}
+.sub-title-line{width:126px; height:3px; background:#ff8a00;}
+.sub-title h2{margin:0; font-size:32px;}
+
+/* sub1-1 */
+.sub1-1{width:100%; padding:6% 0;}
+.sub1-1-2{float:right !important;}
+.sub1-1-2 img{width:100%; max-width:780px;}
+.greeting h1{margin:0; font-size:38px; }
+.greeting h1:first-child{color:#ff8a00;}
+.greeting h1:nth-child(2){color:#4b5888;}
+.greeting h1:nth-child(2) span{font-weight:400;}
+.greeting p{color:#888;}
+.greeting p:nth-of-type(1){color:#000; font-size:20px;}
+.greeting p:nth-of-type(5){color:#000; margin-top:50px;}
+.greeting p:nth-of-type(5) span{font-size:25px; padding-left:20px;}
+
+/* sub1-2 */
+.sub1-2{width:100%; padding:6% 0;}
+.philosophy_bg{width:100%; height:358px;}
+.philosophy_bg img{float:right; width:100%; max-width:715px; margin:0 1%;}
+.section3 p{color:#666; padding:0 5px; font-size:17px;}
+
+.sub1-2-3{width:100%; max-width:380px; display:block; margin:0 auto;}
+.sub1-2-4{display:none;}
+.sub1-table{width:100%; border-top:3px solid #4b5888; border-bottom:3px solid #4b5888;}
+.sub1-table th,td{padding:10px 20px; border-bottom:1px solid #ccc; color:#666; font-size:17px;}
+.sub1-table th{text-align:left; background:#f1f1f1;}
+.sub1-table tr:last-child th{border-bottom:0;}
+.sub1-table tr:last-child td{border-bottom:0;}
+
+/* sub1-3 */
+.sub1-3{width:100%; padding:6% 0;}
+.history{position:relative;}
+.history_img img{display:block; margin:0 auto; width:100%; max-width:278px;}
+.history_arrow{position:absolute; top:20%; left:90%; width:100%; max-width:100px;}
+.history_text{margin:10%;}
+.history_text li{color:#444; font-size:17px; line-height:26px; padding:10px 10px 10px 30px; position:relative;}
+.history_text li i{color:#999; position:absolute; left:0;}
+
+/* sub1-4 */
+.sub1-4{width:100%; padding:6% 0;}
+.equipment-box{padding-right:2%;}
+.equipment-box h2{margin:0; font-size:25px; color:#666; padding:0 5px;}
+.equipment-box ul li{color:#666; font-size:17px; padding:0 5px;}
+.equipment-box i{color:#999;}.equipment-box2{margin-left:5%;}
+.equipment-left-img{float:left;}
+.equipment-left-img img{width:100%; max-width:280px; margin:0 auto; display:block;}
+.equipment-right-img{float:right;}
+.equipment-right-img img{width:100%; max-width:280px; margin:0 auto; display:block;}
+.right-text{text-align:right; margin-top:12%; margin-left:-3%;}
+.right-text img{margin-left:-11%;}
+.left-text{margin-top:12%; padding-left:3%;}
+
+/* sub1-5 */
+.sub1-5{width:100%; padding:6% 0;}
+.cer-box{margin-bottom:5%;}
+.cer-box img{border:1px solid #ccc; display:block; margin:0 auto; width:100%; max-width:275px; box-sizing:border-box;}
+.cer-box h4{margin:2% 15%; color:#666; font-size:17px;}
+.cer-box h4 i{color:#ff8a00;}
+
+/* sub1-6 */
+.sub1-6{width:100%; padding:6% 0;}
+.map-box{position:relative;}
+.sub-map-text{position:absolute; bottom:0; width:100%; max-width:550px; padding:5px 20px;  margin:2% 30%; background:rgba(255,255,255,0.7); border-radius:20px;}
+.sub-map-text h2{font-size:22px; color:#666; margin:1%;}
+.sub-map-text h2 i{color:#4b5888;}
+.sub-map-text h2:first-child i{color:#ff8a00;}
+.sub-map-text h2:nth-child(2){float:left; margin-right:5%;}
+.sub-map-text h2:nth-child(2) i{transform:rotate(90deg);}
+.sub-map-text h2:nth-child(3){display:inline-block;}
+
+/* sub2-1 */
+.sub2-1{width:100%; padding:6% 0;}
+.recycling-process{background-size:100% !important; padding:0 7%; box-sizing:border-box;}
+.process-img img{width:90%; max-width:615px;}
+.process-text{height:200px;}
+.process-text img{float:left; margin-right:10px;}
+.process-text h2{color:#666;}
+.process-text ul{margin-left:40px;}
+.process-text ul li{padding:3px 0; color:#666; font-size:17px;}
+.process3{float:right; margin-top:4.7%;}
+.process4{float:left; margin-top:4.7%;}
+.business-box{width:100%; max-width:852px; height:254px; margin:0 auto;}
+.business-box ul{padding:5%;}
+.business-box ul li{font-size:17px; color:#fff;}
+.business-box ul li i{color:#ccc;}
+.business-box ul li span{color:#ff8a00; font-weight:600;}
+
+/* sub2-2 */
+.sub2-2{width:100%; padding:6% 0;}
+.woodchip-all img{display:block; margin:0 auto; width:100%; max-width:1364px;}
+.product_function{padding-bottom:150px; width:100%;}
+ .pf-text{padding:5%;}
+.pf-text ul li{color:#333; padding-bottom:10px;}
+.pf-text ul li:last-child{padding-bottom:0;}
+.pf-text ul li i{color:#666;}
+
+.product_wrap img{display:block; margin:0 auto; width:85%;}
+         /* slide */
+.unslider{position:relative;}
+.unslider-nav {position: absolute; z-index: 999; bottom:0; width:100%;background:#e9e9e9;}
+.unslider-nav ol{width:100%; max-width:1200px; margin:0 auto !important;}
+.unslider-nav ol li {width:120px; height:76px; background:#e9e9e9 !important; float:left; font-size:28px; font-weight:700; text-align:center; line-height:76px; cursor:pointer;}
+.unslider-nav ol li.unslider-active {background: #ff7800 !important;}
+.in {width:100%; max-width:1472px; margin:0 auto; position: relative;}
+#slide {width:100%; position:relative;}
+#slide .unslider-wrap li {height:715px;}
+.effect-wrap{background:rgba(0,0,0,0.5); width:100%; max-width:720px; margin-top:10%; padding-bottom:5%;}
+.effect-wrap h2{padding:7% 0 3% 8%; font-size:32px; color:#ff8a00; margin:0;}
+.effect-wrap p{padding:0 8% 1% 8%; font-size:16px; color:#fff; margin:0;}
+
+.manage-box-wrap h1{font-size:40px; color:#333; margin-bottom:10px; margin-left:3%;}
+.manage-box{border-top:2px solid #333; border-bottom:2px solid #333; margin:0 3%; padding:10px 10px 20px 10px;}
+.manage-box h2{color:#333; margin-top:15px;}
+.manage-box p{color:#666; margin:5px 0;}
+
+.construction-box{border:5px solid #ccc; border-radius:20px; width:300px; height:300px; margin:0 auto 30px;}
+.construction-box h3{color:#666; margin:20px 0 0 20px;}
+.construction-box h3 i{color:#ff8a00;}
+
+.construction-table-wrap{margin:0 auto; text-align:center;}
+.construction-table-wrap h4{color:#666; margin:0 0 10px -250px;}
+.construction-table{width:100%; max-width:500px; margin:0 auto; border-top:3px solid #4b5888; border-bottom:3px solid #4b5888; color:#666;}
+.construction-table tr:last-child td{border-bottom:0;}
+.construction-table th{background:#f1f1f1; padding:10px 0; border-right:1px solid #ccc; width:50%;}
+.construction-table th:last-child{border-right:0;}
+.construction-table td{border-right:1px solid #ccc;}
+.construction-table td:last-child{border-right:0;}
+
+/* sub2-3 */
+.sub2-3{width:100%; padding:6% 0;}
+.fertilizer-box{margin-bottom:30px;}
+.fertilizer-box h3{color:#666; margin-bottom:0; letter-spacing:-1px;}
+.fertilizer-box h3 i{color:#ff8a00;}
+.fertilizer-box p{margin:5px 0 0 25px;}
+.fertilizer-box img{width:100%;}
+.col-1-5{width:12.5%; float:left; box-sizing:border-box;}
+
+.fertilizer-patent h3{color:#666;}
+.fertilizer-patent h3 i{color:#ff8a00;}
+.fertilizer-patent img{border:3px solid #ccc;}
+
+/* sub3-1 */
+.sub3-1{width:100%; padding:6% 0;}
+.woodchip-button{position:relative; padding-top:30px;} 
+.button_wrap{position:absolute; width:100%;}
+.button_wrap li{width:20%; height:50px; background:#ededed; float:left; text-align:center; line-height:50px; border-radius:20px 20px 0 0; overflow:hidden; box-sizing:border-box;}
+.button_wrap li a{font-size:24px; display:block; font-weight:600; color:#333;}
+.button_wrap .active{background:#ff8a00;}
+.button_wrap .active a{color:#fff;}
+.button_behind li{background:#ccc;}
+.button_front{top:45px;}
+.button_behind li:hover{transition-property:margin, height; margin-top:-30px; height:70px; transition-duration:.5s;}
+/* .button_front li a:hover{background:#ff8a00;}
+.button_front li:hover a{color:#fff;} */
+
+.woodchip-product{padding:2% 0 10%; background:#fdfdfd; border:3px solid #ededed; margin:40px 0;}
+.woodchip-product h1{font-size:60px; color:#999; text-align:center; font-weight:400;}
+.woodchip-product h1 span{font-size:70px; font-weight:700; text-shadow:1px 1px 1px #333;}
+.text-red{color:#db121d;}
+.text-natural{color:#e6af91;}
+.text-orange{color:#f04622;}
+.text-yellow{color:#fed403;}
+.text-black{color:#000;}
+.text-blue{color:#1278a9;}
+.text-brown{color:#c97d49;}
+.text-gold{color:#feda48;}
+.text-green{color:#3d764b;}
+.woodchip-product img{display:block; margin:0 auto; width:100%; max-width:600px;}
+
+.woodchip-img img{width:100%; display:block;}
+
+
+/* sub4-1 */
+.sub4-1{width:100%; padding:6% 0;}
+
+/* sub4-2 */
+.sub4-2{width:100%; padding:6% 0;}
+
+/* sub4-3 */
+.sub4-3{width:100%; padding:6% 0;}
+
+/* sub4-4 */
+.sub4-4{width:100%; padding:6% 0;}
+
+/* sub5-1 */
+.sub5-1{width:100%; padding:6% 0;}
+
+/* sub5-2 */
+.sub5-2{width:100%; padding:6% 0;}
+
+
+@media all and (max-width:1199px){
+	.equipment-box{width:100%;}
+	.cer-box h4{font-size:14px; margin:2% 10%;}
+	.business-box ul li{font-size:14px;}
+	.recycling-process h2{font-size:18px; margin:5px 0 10px 0;}
+	.recycling-process ul li{font-size:14px;}
+	.process-text{height:185px;}
+	.process3, .process4{margin-top:0;}
+	
+	 .pf-text{padding:7% 2%;}
+	.pf-text ul li{font-size:14px;}
+	
+	.unslider-nav ol{width:100%; max-width:800px; margin:0 auto;}
+	.unslider-nav ol li{width:80px; height:68px; font-size:22px; line-height:68px;}
+	#slide .unslider-wrap li{height:500px;}
+}
+
+
+@media all and (max-width:767px){
+	br{display:none;}
+	
+	.sub1-2-4{display:block; width:100%; max-width:545px; margin:20px  auto;}
+	.recycling-process{background:#fff;}
+	.process1, .process2, .process3, .process4{margin-bottom:5%;}
+	.process3, .process4{margin-top:0;}
+	.process3 .process-img{margin-top:0;}
+	.business-box{background:url(../images/business-box2.png)no-repeat; width:100%; max-width:640px;}
+	.product_function{background:url(../images/sub2-2-22.jpg)no-repeat; padding-bottom:320px;}
+
+	.unslider-nav ol{width:100%; max-width:600px; margin:0 auto;}
+	.unslider-nav ol li{width:60px; height:60px; font-size:18px; line-height:60px;}
+	#slide .unslider-wrap li{height:450px;}	
+	
+}
+
+@media all and (max-width:525px){
+	.right-text{margin-top:3%; margin-bottom:20%;}
+	.left-text{margin-top:3%; margin-bottom:20%;}
+	
+	.construction-table-wrap h4{margin:0 0 10px 0;}
+}
+
+
+
