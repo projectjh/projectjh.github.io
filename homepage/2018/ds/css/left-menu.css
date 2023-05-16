@@ -11,7 +11,7 @@
 .main_menu > ul > li > a{font-size:19px; font-weight:600; color:#555; letter-spacing:-1px;}
 
 .sub_menu{display:none; margin-top:20px; background:#fafafa; border-top:2px solid #ff8a00;}
-.sub_menu li{padding:5px 0; border-bottom:1px solid #eaeaea;}
+.sub_menu li{padding:5px 10px; box-sizing:border-box; border-bottom:1px solid #eaeaea;}
 .sub_menu li:hover{background:#f2f2f2;}
 .sub_menu li a{color:#666; display:block;}
 

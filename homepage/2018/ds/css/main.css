@@ -2,7 +2,7 @@
 .section1{margin-bottom:5%;}
 .gallery{padding-bottom:50%;}
 .gallery-text{position:absolute; z-index:999; top:15%; left:25%;}
-.gallery-text h1{font-size:50px; font-weight:700; color:#fff; text-shadow:2px 2px 1px #000; font-style:italic; margin:0;}
+.gallery-text h1{font-size:42px; font-weight:700; color:#fff; text-shadow:2px 2px 1px #000; font-style:italic; margin:0;}
 .gallery-text p{font-size:18px; color:#fff; font-weight:500; text-shadow:1px 1px 1px #000; }
 
 .section-title h1{float:left; margin:0; margin-right:20px;}
@@ -74,10 +74,10 @@
 .map_wrap{width:100%; position:relative;}
 .map_wrap img{max-width:100%;}
 .map-text{background:rgba(75,88,136,0.8); position:absolute; width:100%; bottom:0; }
-.map-text p{text-align:center; margin:0; padding:30px 0; color:#fff;}
+.map-text p{text-align:center; margin:0; padding:30px; color:#fff;}
 
 .contact-box ul{min-height:613px; background:#d2d5e2; }
-.contact-box ul li{margin:0 5%; padding:20px; box-sizing:border-box; border-bottom:1px solid #ccc;}
+.contact-box ul li{margin:0 5%; padding:15px; box-sizing:border-box; border-bottom:1px solid #ccc;}
 .contact-box ul li:last-child{border:0;}
 .contact-box ul li img{float:left; margin-right:15px; max-width:40px;}
 .contact-box h2{margin:0; color:#4b5888;}
