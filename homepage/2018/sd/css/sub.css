@@ -19,7 +19,7 @@
 
 
 /***************** section **************/
-#section{width:100%; padding:40px 0;}
+#section{width:100%; padding:40px 0; box-sizing: border-box; min-height: 300px;}
 #section .section-wrap{width:100%; max-width:1200px; margin:0 auto;}
 #section .section-title{margin:20px 0 40px; overflow:hidden;}
 #section .section-title ul{text-align:center;}

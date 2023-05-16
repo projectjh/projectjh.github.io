@@ -3,6 +3,7 @@
 /******************slide********************/
 .unslider {
   position: relative;  
+  overflow:hidden !important;
 }
 
  .unslider-nav {

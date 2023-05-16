@@ -1,10 +1,14 @@
 $('.main-menu > ul > li').mouseover(function(){
-	$(this).css('background','#008dd6;')
+	$(this).css('background','#008dd6;');
 	$(this).children('.sub-menu').css('display', 'block');
 });
 $('.main-menu > ul > li').mouseleave(function(){	
-	$(this).css('background','none')
+	$(this).css('background','none');
 	$(this).children('.sub-menu').css('display', 'none');
+});
+
+$('.sub-menu').mouseover(function(){
+	$(this).parents('.main-menu > ul > li').css('background', '#008dd6');
 });
 
 
