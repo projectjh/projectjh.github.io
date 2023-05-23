@@ -1,0 +1,179 @@
+.logo {
+  height: 30px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.header {
+  width: 100%;
+  // height: 56.22px;
+  background-color: #0f4eb5;
+  position: fixed;
+  top: 0;
+  max-width: 768px;
+  height: 60px;
+  z-index: 100;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.icon {
+  height: 30px;
+  width: 30px;
+  padding: 10px;
+  color: white;
+}
+
+.Menu {
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.Login {
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.Logout {
+  cursor: pointer;
+}
+
+.show-menu {
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  padding-top: 10px;
+  box-sizing: border-box;
+  width: 170px;
+  height: 120vh;
+  position: absolute;
+  left: 0px;
+  transition: 0s;
+  visibility: visible;
+  z-index: 100;
+}
+
+.hide-menu {
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  // width: 0px;
+  // height: 100vh;
+  position: absolute;
+  // left: -200%;
+  transition: 0s;
+  visibility: hidden;
+}
+
+.show-login {
+  margin: 0;
+  padding: 0;
+  padding-right: 20px;
+  padding-top: 10px;
+  box-sizing: border-box;
+  width: 170px;
+  height: 120vh;
+  position: absolute;
+  right: 0px;
+  transition: 0s;
+  visibility: visible;
+  z-index: 100;
+}
+
+.hide-login {
+  margin: 0;
+  padding: 0;
+  padding-right: 20px;
+  // width: 0px;
+  // height: 100vh;
+  // position: absolute;
+  // left: -200%;
+  right: 0px;
+  transition: 0s;
+  visibility: hidden;
+}
+
+ul.show-menu,
+ul.hide-menu,
+ul.show-login,
+ul.hide-login {
+  list-style: none;
+  background-color: ghostwhite;
+  padding: 1%;
+  margin: 0%;
+  position: absolute;
+  // z-index: 99;
+  top: 60px;
+  height: calc(100vh - 60px);
+}
+
+.menuWrap > ul > li {
+  width: 150px;
+  line-height: 200%;
+  cursor: pointer;
+}
+
+.menu_nick {
+  cursor: context-menu !important;
+}
+
+.menuWrap > ul > hr {
+  margin: 10px 0 10px 0;
+  width: 130px;
+}
+
+.logo_v {
+  width: 100px;
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  opacity: 0.5;
+}
+
+.loginWrap > ul > li {
+  width: 150px;
+  line-height: 200%;
+  text-align: right;
+  cursor: pointer;
+}
+
+.loginWrap > ul > hr {
+  margin: 10px 0px 10px 20px;
+  width: 130px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.show-blind {
+  width: 100%;
+  height: 100%;
+  background: black;
+  position: absolute;
+  z-index: 99;
+  opacity: 0.6;
+  display: block;
+  max-width: 768px;
+  top: 60px;
+}
+
+.hide-blind {
+  width: 100%;
+  height: 100%;
+  background: none;
+  position: absolute;
+  z-index: 99;
+  opacity: 0.6;
+  display: none;
+}
